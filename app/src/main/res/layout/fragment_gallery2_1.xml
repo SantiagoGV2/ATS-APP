@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.gallery2.GalleryFragment2_1$SecondActivity2_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnquimico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="640dp"
+        android:text="Quimico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="203dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnquimico" />
+
+    <Button
+        android:id="@+id/btnpsicosocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="640dp"
+        android:text="Psicosocial"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpsicosocial" />
+
+
+
+    <Button
+        android:id="@+id/btnmecánicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginBottom="400dp"
+        android:text="Mecánicos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmecánicos" />
+
+    <Button
+        android:id="@+id/btnconfinados"
+        android:layout_width="191dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="288dp"
+        android:text="Espacios Confinados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnconfinados" />
+
+    <Button
+        android:id="@+id/btnseguridad"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="288dp"
+        android:text="Condiciones de seguridad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnseguridad" />
+
+    <Button
+        android:id="@+id/btnfenomenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginBottom="176dp"
+        android:text="Fenómenos Naturales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfenomenos" />
+</androidx.constraintlayout.widget.ConstraintLayout>

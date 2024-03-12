@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery2.GalleryFragment2$SecondActivity">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="406dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="616dp"
+        android:text="IDENTIFICACIÓN DE PELIGROS POTENCIALES(Alturas)"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnalturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginBottom="280dp"
+        android:text="Alturas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btneléctrico" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnalturas" />
+
+    <Button
+        android:id="@+id/btneléctrico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="280dp"
+        android:text="Eléctrico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnbiomecanicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="556dp"
+        android:text="Biomecánicos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnfisico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="556dp"
+        android:text="Fisico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="4dp"
+
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfisico" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbiomecanicos" />
+
+    <Button
+        android:id="@+id/nextBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="4dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

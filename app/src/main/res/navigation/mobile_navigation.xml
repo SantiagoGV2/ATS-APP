@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fibrateltec.atsapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_permiso"
+            app:destination="@id/nav_permiso" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_riesgo"
+            app:destination="@id/nav_riesgo" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.fibrateltec.atsapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_permiso"
+        android:name="com.fibrateltec.navbar.ui.permiso.PermisoFragment"
+        android:label="@string/menu_permiso"
+        tools:layout="@layout/fragment_permiso" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.fibrateltec.atsapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_riesgo"
+        android:name="com.fibrateltec.navbar.ui.riesgo.RiesgoFragment"
+        android:label="@string/menu_riesgo"
+        tools:layout="@layout/fragment_riesgo" />
+</navigation>

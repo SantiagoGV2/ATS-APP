@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+         android:id="@+id/constraint"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:visibility="visible"
+            tools:context=".ui.gallery.GalleryFragment">
+
+    <TextView
+        android:id="@+id/text_gallery1"
+        android:layout_width="264dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="668dp"
+        android:gravity="center"
+        android:text="Caracterizacion de tareas criticas"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_gallery2"
+        android:layout_width="257dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="596dp"
+        android:text="El trabajador está certificado en alturas"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/si2"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <CheckBox
+        android:id="@+id/si5"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <CheckBox
+        android:id="@+id/si3"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <CheckBox
+        android:id="@+id/no"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <CheckBox
+        android:id="@+id/no2"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <CheckBox
+        android:id="@+id/no5"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <CheckBox
+        android:id="@+id/si"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <CheckBox
+        android:id="@+id/no4"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <CheckBox
+        android:id="@+id/si4"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <CheckBox
+        android:id="@+id/no3"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="259dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="136dp"
+        android:gravity="center"
+        android:text="El trabajador cuenta con los EPC necesarios y en buen estado para ejecutar la actividad?"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery2"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/text_gallery3"
+        android:layout_width="258dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="136dp"
+        android:gravity="center"
+        android:text="El trabajador conoce el procedimiento de trabajo seguro en alturas?"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/text_gallery4"
+        android:layout_width="244dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="140dp"
+        android:gravity="center"
+        android:text="El trabajador se encuentra apto para desarrollar la labor"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery3"
+        app:layout_constraintVertical_bias="0.046" />
+
+
+    <TextView
+        android:id="@+id/text_gallery5"
+        android:layout_width="247dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="144dp"
+        android:gravity="center"
+        android:text="El trabajador revisó los accesos al área de trabajo y los requerimientos
+    de rescate en caso de presentarse una emergencia?"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery4"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="224dp"
+        android:layout_weight="1"
+        android:text="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <com.fibrateltec.atsapp.ui.Signature.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="373dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/btnxml"
+        android:layout_width="162dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="44dp"
+        android:layout_weight="1"
+        android:text="Crear PDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
