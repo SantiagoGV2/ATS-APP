@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -46,6 +46,61 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.gallery3.GalleryFragment3$ThirdActivity" />
+        <activity android:name=".ui.slideshow2.ConfinadosFragment2$FourActivity" />
+        <activity
+            android:name=".ui.slideshow2.ConfinadosFragment2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.slideshow3.ConfinadosFragment3$FifthActivity" />
+        <activity android:name=".ui.riesgo2.RiesgoFragment2$SixthActivity" />
+        <activity
+            android:name=".ui.riesgo2.RiesgoFragment2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.riesgo3.RiesgoFragment3$SeventhActivity"  />
+        <activity
+            android:name=".ui.riesgo3.RiesgoFragment3"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.riesgo4.RiesgoFragment4$EighthActivity"  />
+        <activity
+            android:name=".ui.riesgo4.RiesgoFragment4"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.pdf2.PdfFragment2$EleventhActivity" />
+        <activity android:name=".ui.pdf3.PdfFragment3$TwelfthActivity" />
+        <activity android:name=".ui.pdf.PdfFragment$TentthActivity"  />
+        <activity
+            android:name=".ui.pdf.PdfFragment"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

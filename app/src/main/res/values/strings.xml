@@ -10,6 +10,8 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Trabajo En Alturas</string>
     <string name="menu_permiso">Permiso de Trabajo en Alturas</string>
+    <string name="menu_gallery2">Identificacion de peligros potenciales</string>
+    <string name="menu_gallery3">Caracterizacion de tareas criticas</string>
     <string name="menu_slideshow">Confinados</string>
     <string name="menu_riesgo">Riego Electrico</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
@@ -39,6 +41,18 @@
         <item>Ventilación natural permanente</item>
         <item>Almacenamiento correcto de materiales y productos químicos</item>
     </array>
+    <array name="Biologico">
+        <item>Virus</item>
+        <item>Bacterias</item>
+        <item>Hongos</item>
+        <item>Picadura</item>
+        <item>Mordeduras</item>
+    </array>
+    <array name="Biologicos2">
+        <item>Utilizacion de EPP</item>
+        <item>Verificar agentes de amenazas</item>
+        <item>Ventilacion de la camara</item>
+    </array>
     <array name="psicosocial">
         <item>Características de la tarea</item>
         <item>Grupo social del trabajo</item>
@@ -53,16 +67,27 @@
     </array>
     <array name="biomecanicos">
         <item>Postura prolongada o esfuerzo</item>
-        <item>Movimiento repetitivo</item>
         <item>Manipulación manual de cargas</item>
     </array>
     <array name="biomecanicos2">
         <item>Implementación de pausas activas</item>
         <item>Cambiar de postura frecuentemente</item>
         <item>Utilizar puntos adicionales de apoyo</item>
-        <item>Asegurar un buen apoyo de los pies manteniéndolos separados a la amplitud de los hombros</item>
-        <item>Mantener la espalda recta, doblar las rodillaso</item>
-        <item>Mantener la carga tan cerca del cuerpo como sea posibleo</item>
+        <item>Buen apoyo de los pies separados a la amplitud de los hombros</item>
+        <item>Espalda recta, doblar las rodillas</item>
+        <item>Carga tan cerca del cuerpo como sea posible</item>
+    </array>
+    <array name="biomecanicos3">
+        <item>Postura prolongada o esfuerzo</item>
+        <item>Manipulación manual de cargas</item>
+    </array>
+    <array name="biomecanicos4">
+        <item>Implementación de pausas activas</item>
+        <item>Cambiar de postura frecuentemente</item>
+        <item>Utilizar puntos adicionales de apoyo</item>
+        <item>Buen apoyo de los pies separados a la amplitud de los hombros</item>
+        <item>Espalda recta, doblar las rodillas</item>
+        <item>Carga tan cerca del cuerpo como sea posible</item>
     </array>
     <array name="alturas">
         <item>Caídas de diferente nivel</item>
@@ -70,7 +95,6 @@
         <item>Caída de escaleras</item>
     </array>
     <array name="alturas2">
-        <item>Caída de escaleras</item>
         <item>Utilizar EPCC adecuados para la labor</item>
         <item>Disponer de puntos de anclaje con resistencia 5000 lb</item>
         <item>Emplear sistemas de acceso como escaleras o pretales</item>
@@ -114,6 +138,21 @@
         <item>Cortar todas las fuentes en tensión </item>
         <item>Utilizar los EPP apropiados para el nivel de tensión(BT)</item>
     </array>
+    <array name="electrico4">
+        <item>Contacto directo e indirecto con energías Peligrosas</item>
+        <item>Cortocircuito</item>
+        <item>Sobrecarga Estática</item>
+        <item>Descargas Atmófericas</item>
+        <item>Mal estado y defectos de Instalaciones eléctricas</item>
+    </array>
+    <array name="electrico5">
+        <item>No utilizar equipos y sistemas eléctricos en malas condiciones</item>
+        <item>No sobrecargar circuitos eléctricos</item>
+        <item>No intervenir líneas energizadas sin autorización ni conocimiento</item>
+        <item>Tomar las medidas necesarias para evitar aproximarse a líneas eléctricas</item>
+        <item>Cortar todas las fuentes en tensión </item>
+        <item>Utilizar los EPP apropiados para el nivel de tensión(BT)</item>
+    </array>
     <array name="seguridad">
         <item>Superficies irregulares</item>
         <item>Orden y aseo</item>
@@ -148,5 +187,9 @@
         <item>Implementar prácticas de manejo defensivo</item>
     </array>
 
-
+    <string-array name="spinners">
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Cambio</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.fibrateltec.atsapp.ui.gallery3
+package com.fibrateltec.atsapp.ui.slideshow3
 
 import android.Manifest
 import android.content.Intent
@@ -10,7 +10,6 @@ import android.os.Environment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.itextpdf.text.Document
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -21,22 +20,19 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.R
-import com.fibrateltec.atsapp.databinding.FragmentGallery3Binding
+import com.fibrateltec.atsapp.databinding.FragmentConfinados3Binding
 import com.fibrateltec.atsapp.ui.Signature.SignaturePad
 import com.fibrateltec.atsapp.ui.pdf2.PdfFragment2
+import com.fibrateltec.atsapp.ui.pdf3.PdfFragment3
+import com.itextpdf.text.Document
+import com.itextpdf.text.Image
 import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
-import com.itextpdf.text.Image
 import java.io.File
 import java.io.FileOutputStream
 
-
-
-
-
-
-class GalleryFragment3 : Fragment() {
-    private var _binding: FragmentGallery3Binding? = null
+class ConfinadosFragment3 : Fragment() {
+    private var _binding: FragmentConfinados3Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -45,22 +41,22 @@ class GalleryFragment3 : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val galleryViewModel2 = ViewModelProvider(this).get(GalleryViewModel3::class.java)
+        val galleryViewModel2 = ViewModelProvider(this).get(ConfinadosViewModel3::class.java)
 
-        _binding = FragmentGallery3Binding.inflate(inflater, container, false)
+        _binding = FragmentConfinados3Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textFragmentGallery3
+        val textView: TextView = binding.textFragmentConfinados3
         galleryViewModel2.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
     }
-    class ThirdActivity : AppCompatActivity() {
+    class FifthActivity : AppCompatActivity() {
         private var btnNextVisibility = View.VISIBLE
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.fragment_gallery3)
+            setContentView(R.layout.fragment_confinados3)
 
             if(checkPermission()){
                 Toast.makeText(this,"Permiso Aceptado",Toast.LENGTH_LONG).show()
@@ -68,20 +64,20 @@ class GalleryFragment3 : Fragment() {
                 requestPermissions()
             }
 
-            val clearButton = findViewById<Button>(R.id.clear)
+            val clearButton = findViewById<Button>(R.id.clear2)
             clearButton.setOnClickListener {
                 val signaturePad = findViewById<SignaturePad>(R.id.signature_pad)
                 signaturePad.clearSignature()
             }
 
-            val btnxml: Button = findViewById(R.id.btnxml)
+            val btnxml: Button = findViewById(R.id.btnxml7)
             btnxml.setOnClickListener {
                 exportToPDF()
             }
-            val nxtboton2: Button = findViewById(R.id.button2)
+            val nxtboton2: Button = findViewById(R.id.button3)
             btnNextVisibility = nxtboton2.visibility
             nxtboton2.setOnClickListener {
-                val intent = Intent(this, PdfFragment2.EleventhActivity::class.java)
+                val intent = Intent(this, PdfFragment3.TwelfthActivity::class.java)
                 startActivity(intent)
 
             }
@@ -117,7 +113,7 @@ class GalleryFragment3 : Fragment() {
         }
         private fun exportToPDF() {
             val document = Document()
-            val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Tareas_criticas.pdf").absolutePath
+            val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Tareas_criticas3.pdf").absolutePath
             val file = File(path)
             try {
                 val fileOutputStream = FileOutputStream(file)
@@ -127,11 +123,11 @@ class GalleryFragment3 : Fragment() {
                 document.open()
 
                 // Agrega el primer contenido al documento PDF
-                val constraint: ConstraintLayout = findViewById(R.id.constraint)
+                val constraint: ConstraintLayout = findViewById(R.id.constraint6)
                 addViewToPDF(document, constraint)
 
                 document.close() // Cerrar el documento aquí después de agregar todo el contenido
-                findViewById<Button>(R.id.button2).visibility = btnNextVisibility
+                findViewById<Button>(R.id.button3).visibility = btnNextVisibility
                 Toast.makeText(this, "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
@@ -150,14 +146,14 @@ class GalleryFragment3 : Fragment() {
             view.layout(0, 0, view.measuredWidth, view.measuredHeight)
 
 
-            val btnClear = view.findViewById<Button>(R.id.clear)
-            val btnCreatePDF = view.findViewById<Button>(R.id.btnxml)
+            val btnClear = view.findViewById<Button>(R.id.clear2)
+            val btnCreatePDF = view.findViewById<Button>(R.id.btnxml7)
 
             if (btnClear != null && btnCreatePDF != null) {
                 btnClear.visibility = View.GONE
                 btnCreatePDF.visibility = View.GONE
             }
-            findViewById<Button>(R.id.button2).visibility = View.GONE
+            findViewById<Button>(R.id.button3).visibility = View.GONE
 
             // Convierte la vista a un bitmap
             val fixedWidth = 1030 // T

@@ -10,15 +10,19 @@
     tools:layout_editor_absoluteY="-48dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint4"
+        android:id="@+id/constraint3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:visibility="visible"
-        tools:context=".ui.slideshow.SlideshowFragment">
+        tools:context=".ui.gallery.GalleryFragment"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="-153dp">
+
+
         <TextView
-            android:id="@+id/text_slideshow"
+            android:id="@+id/text_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -28,15 +32,16 @@
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.462" />
 
         <TextView
             android:id="@+id/text_gallery13"
             android:layout_width="260dp"
             android:layout_height="72dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:text="¿Son óptimas las condiciones de salud de la cuadrilla
 para realizar la actividad?"
@@ -45,7 +50,7 @@ para realizar la actividad?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/supervisor"
-            app:layout_constraintVertical_bias="0.042"
+            app:layout_constraintVertical_bias="0.035"
 
             />
 
@@ -126,7 +131,7 @@ para realizar la actividad?"
             android:id="@+id/text_gallery2"
             android:layout_width="260dp"
             android:layout_height="72dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:text="¿El tiempo de sueño de cada integrante de la cuadrilla
 ha sido el suficiente para iniciar la labor?"
@@ -135,196 +140,12 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery13"
-            app:layout_constraintVertical_bias="0.014"
+            app:layout_constraintVertical_bias="0.019"
 
             />
 
         <CheckBox
-            android:id="@+id/si"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.159" />
-
-        <CheckBox
-            android:id="@+id/si7"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery7"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.381" />
-
-        <CheckBox
-            android:id="@+id/no8"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery8"
-            app:layout_constraintTop_toBottomOf="@+id/si8" />
-
-        <CheckBox
-            android:id="@+id/si8"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery8"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.421" />
-
-        <CheckBox
-            android:id="@+id/no2"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery13"
-            app:layout_constraintTop_toBottomOf="@+id/si2" />
-
-        <CheckBox
-            android:id="@+id/si5"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.287" />
-
-        <CheckBox
             android:id="@+id/no"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery2"
-            app:layout_constraintTop_toBottomOf="@+id/si" />
-
-        <CheckBox
-            android:id="@+id/no4"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery4"
-            app:layout_constraintTop_toBottomOf="@+id/si4" />
-
-        <CheckBox
-            android:id="@+id/si3"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.2" />
-
-        <CheckBox
-            android:id="@+id/no3"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery3"
-            app:layout_constraintTop_toBottomOf="@+id/si3" />
-
-        <CheckBox
-            android:id="@+id/si6"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery6"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.337" />
-
-        <CheckBox
-            android:id="@+id/no5"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
-            android:text="No"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery5"
-            app:layout_constraintTop_toBottomOf="@+id/si5" />
-
-        <CheckBox
-            android:id="@+id/si4"
-            android:layout_width="79dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginEnd="24dp"
-            android:text="Si"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243" />
-
-        <CheckBox
-            android:id="@+id/no7"
             android:layout_width="79dp"
             android:layout_height="48dp"
             android:layout_marginTop="4dp"
@@ -332,37 +153,180 @@ ha sido el suficiente para iniciar la labor?"
             android:text="No"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.828"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery7"
+            app:layout_constraintTop_toBottomOf="@+id/si" />
+
+        <CheckBox
+            android:id="@+id/si"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <CheckBox
+            android:id="@+id/si7"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.349" />
+
+        <CheckBox
+            android:id="@+id/no8"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/si8" />
+
+        <CheckBox
+            android:id="@+id/si8"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.387" />
+
+        <CheckBox
+            android:id="@+id/si5"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262" />
+
+        <CheckBox
+            android:id="@+id/no5"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/si5" />
+
+        <CheckBox
+            android:id="@+id/no4"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/si4" />
+
+        <CheckBox
+            android:id="@+id/si3"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185" />
+
+        <CheckBox
+            android:id="@+id/no3"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/si3" />
+
+        <CheckBox
+            android:id="@+id/si6"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.308" />
+
+        <CheckBox
+            android:id="@+id/no6"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/si6" />
+
+        <CheckBox
+            android:id="@+id/si4"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:text="Si"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <CheckBox
+            android:id="@+id/no7"
+            android:layout_width="79dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:text="No"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/si7" />
 
         <CheckBox
             android:id="@+id/si2"
             android:layout_width="79dp"
             android:layout_height="48dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="12dp"
             android:text="Si"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery13"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.465" />
+            app:layout_constraintVertical_bias="0.427" />
 
         <CheckBox
-            android:id="@+id/no6"
+            android:id="@+id/no2"
             android:layout_width="79dp"
             android:layout_height="48dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
             android:text="No"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/text_gallery6"
-            app:layout_constraintTop_toBottomOf="@+id/si6" />
+            app:layout_constraintTop_toBottomOf="@+id/si2" />
 
         <TextView
             android:id="@+id/text_gallery3"
@@ -376,11 +340,11 @@ ha sido el suficiente para iniciar la labor?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.02"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery2"
-            app:layout_constraintVertical_bias="0.028" />
+            app:layout_constraintVertical_bias="0.012" />
 
         <TextView
             android:id="@+id/text_gallery4"
@@ -395,16 +359,16 @@ bebidas alcohólicas en las últimas 24 horas?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintHorizontal_bias="0.142"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery3"
-            app:layout_constraintVertical_bias="0.025" />
+            app:layout_constraintVertical_bias="0.007" />
 
         <TextView
             android:id="@+id/text_gallery5"
-            android:layout_width="274dp"
-            android:layout_height="104dp"
+            android:layout_width="261dp"
+            android:layout_height="112dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="140dp"
@@ -414,11 +378,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.096"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery4"
-            app:layout_constraintVertical_bias="0.019" />
+            app:layout_constraintVertical_bias="0.009" />
 
         <TextView
             android:id="@+id/text_gallery6"
@@ -432,11 +396,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintHorizontal_bias="0.083"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery5"
-            app:layout_constraintVertical_bias="0.019" />
+            app:layout_constraintVertical_bias="0.006" />
 
         <TextView
             android:id="@+id/text_gallery7"
@@ -450,11 +414,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.083"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery6"
-            app:layout_constraintVertical_bias="0.023" />
+            app:layout_constraintVertical_bias="0.02" />
 
         <TextView
             android:id="@+id/text_gallery8"
@@ -468,45 +432,45 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.104"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery7"
-            app:layout_constraintVertical_bias="0.03" />
+            app:layout_constraintVertical_bias="0.021" />
 
         <TextView
             android:id="@+id/text_gallery9"
-            android:layout_width="214dp"
-            android:layout_height="52dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
             android:gravity="center"
             android:text="Overol y demas elementos"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/mySpinner1"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
 
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.553" />
+            app:layout_constraintVertical_bias="0.504" />
 
         <Spinner
             android:id="@+id/mySpinner1"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            app:layout_constraintVertical_bias="0.504" />
 
         <TextView
             android:id="@+id/text_gallery15"
             android:layout_width="321dp"
             android:layout_height="64dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="404dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="364dp"
             android:gravity="center"
             android:text="Condiciones fisicas generales de los integrantes de la cuadrilla"
             android:textAlignment="center"
@@ -519,7 +483,7 @@ a la actividad que van a desarrollar?"
             android:id="@+id/textView3"
             android:layout_width="327dp"
             android:layout_height="56dp"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="16dp"
             android:gravity="center_horizontal"
             android:text="INSPECCIÓN DE ELEMENTOS DE PROTECCIÓN INDIVIDUAL"
             android:textAlignment="center"
@@ -528,37 +492,70 @@ a la actividad que van a desarrollar?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.524" />
+            app:layout_constraintVertical_bias="0.48" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="219dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
             android:text="Botas dieléctricas o de caucho"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.576" />
+            app:layout_constraintVertical_bias="0.524" />
 
         <Spinner
             android:id="@+id/spinner2"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="8dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.575" />
+            app:layout_constraintVertical_bias="0.524" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.543" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.562" />
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.584" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="219dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
             android:text="Botas dieléctricas o de caucho"
             android:textAlignment="center"
             android:textSize="17sp"
@@ -567,45 +564,23 @@ a la actividad que van a desarrollar?"
             app:layout_constraintTop_toBottomOf="@id/textView4"
             app:layout_constraintVertical_bias="0.01" />
 
-        <Spinner
-            android:id="@+id/spinner3"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.594" />
-
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="214dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
             android:text="Casco de Seguridad Tipo II clase E con Barbuquejo"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView5"
-            app:layout_constraintVertical_bias="0.01" />
-
-        <Spinner
-            android:id="@+id/spinner4"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.614" />
+            app:layout_constraintVertical_bias="0.012" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="210dp"
-            android:layout_height="44dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
             android:layout_marginStart="12dp"
             android:text="Monogafas de Seguridad"
             android:textAlignment="center"
@@ -613,24 +588,13 @@ a la actividad que van a desarrollar?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView6"
-            app:layout_constraintVertical_bias="0.012" />
-
-        <Spinner
-            android:id="@+id/spinner5"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.635" />
+            app:layout_constraintVertical_bias="0.023" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="327dp"
             android:layout_height="56dp"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="16dp"
             android:gravity="center_horizontal"
             android:text="INSPECCIÓN DE EQUIPOS DE PROTECCIÓN CONTRA CAÍDAS"
             android:textAlignment="center"
@@ -639,7 +603,7 @@ a la actividad que van a desarrollar?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
+            app:layout_constraintVertical_bias="0.606" />
 
         <TextView
             android:id="@+id/textView9"
@@ -658,100 +622,100 @@ a la actividad que van a desarrollar?"
             android:id="@+id/spinner6"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.677" />
-
-        <Spinner
-            android:id="@+id/spinner11"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.779" />
-
-        <Spinner
-            android:id="@+id/spinner7"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="32dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.698" />
+            app:layout_constraintVertical_bias="0.631" />
 
         <Spinner
             android:id="@+id/spinner8"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.719" />
-
-        <Spinner
-            android:id="@+id/spinner10"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.76" />
-
-        <Spinner
-            android:id="@+id/spinner13"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.817" />
-
-        <Spinner
-            android:id="@+id/spinner14"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.836" />
+            app:layout_constraintVertical_bias="0.654" />
 
         <Spinner
             android:id="@+id/spinner9"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
+            app:layout_constraintVertical_bias="0.676" />
+
+        <Spinner
+            android:id="@+id/spinner10"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.717" />
 
         <Spinner
             android:id="@+id/spinner12"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.798" />
+            app:layout_constraintVertical_bias="0.756" />
+
+        <Spinner
+            android:id="@+id/spinner13"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.775" />
+
+        <Spinner
+            android:id="@+id/spinner14"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.795" />
+
+        <Spinner
+            android:id="@+id/spinner11"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736" />
+
+        <Spinner
+            android:id="@+id/spinner7"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.696" />
 
         <TextView
             android:id="@+id/textView10"
@@ -861,7 +825,7 @@ a la actividad que van a desarrollar?"
             android:id="@+id/textView18"
             android:layout_width="291dp"
             android:layout_height="38dp"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="44dp"
             android:text="INSPECCIÓN DE HERRAMIENTAS Y EQUIPOS"
             android:textAlignment="center"
             android:textSize="17sp"
@@ -869,7 +833,7 @@ a la actividad que van a desarrollar?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView17"
-            app:layout_constraintVertical_bias="0.12" />
+            app:layout_constraintVertical_bias="0.034" />
 
         <TextView
             android:id="@+id/textView19"
@@ -888,61 +852,39 @@ a la actividad que van a desarrollar?"
             android:id="@+id/spinner15"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.884" />
-
-        <Spinner
-            android:id="@+id/spinner17"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.923" />
+            app:layout_constraintVertical_bias="0.839" />
 
         <Spinner
             android:id="@+id/spinner16"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.902" />
+            app:layout_constraintVertical_bias="0.861" />
 
         <Spinner
-            android:id="@+id/spinner18"
+            android:id="@+id/spinner17"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="4dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.944" />
-
-        <Spinner
-            android:id="@+id/spinner19"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.967" />
+            app:layout_constraintVertical_bias="0.882" />
 
         <TextView
             android:id="@+id/textView20"
-            android:layout_width="210dp"
-            android:layout_height="44dp"
+            android:layout_width="212dp"
+            android:layout_height="62dp"
             android:layout_marginStart="12dp"
             android:text="Equipos de medición (identificación y estado de calibración)"
             android:textAlignment="center"
@@ -969,52 +911,74 @@ a la actividad que van a desarrollar?"
             android:id="@+id/textView22"
             android:layout_width="210dp"
             android:layout_height="44dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:text="Escalera Tijera (Para actividades al Interior)"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView21"
-            app:layout_constraintVertical_bias="0.123" />
+            app:layout_constraintVertical_bias="0.067" />
+
+        <Spinner
+            android:id="@+id/spinner18"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.903" />
+
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="210dp"
             android:layout_height="44dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:text="Escalera de extensión en fibra de Vidrio"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView22"
-            app:layout_constraintVertical_bias="0.176" />
+            app:layout_constraintVertical_bias="0.045" />
 
-
-        <Button
-            android:id="@+id/nextBtn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:text="Next"
+        <Spinner
+            android:id="@+id/spinner19"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView23"
-            app:layout_constraintVertical_bias="0.625">
-
-        </Button>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.922" />
 
         <Button
-            android:id="@+id/btnxml4"
+            android:id="@+id/btnxml3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="184dp"
+            android:layout_marginStart="192dp"
             android:text="Crear PDF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView23"
-            app:layout_constraintVertical_bias="0.6">
+            app:layout_constraintVertical_bias="0.194">
+
+        </Button>
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView23"
+            app:layout_constraintVertical_bias="0.221">
 
         </Button>
 
@@ -1023,3 +987,6 @@ a la actividad que van a desarrollar?"
 
 
 </ScrollView>
+
+
+

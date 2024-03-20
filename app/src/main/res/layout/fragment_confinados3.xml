@@ -2,19 +2,19 @@
 
 
 <androidx.constraintlayout.widget.ConstraintLayout
-         android:id="@+id/constraint"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="false"
-            android:scrollbarAlwaysDrawVerticalTrack="false"
-            android:visibility="visible"
+    android:id="@+id/constraint6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:visibility="visible"
     tools:context=".ui.gallery3.GalleryFragment3$ThirdActivity">
 
     <TextView
-        android:id="@+id/text_fragment_gallery3"
+        android:id="@+id/text_fragment_confinados3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -48,7 +48,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="572dp"
-        android:text="El trabajador está certificado en alturas"
+        android:text="¿El trabajador tiene entrenamiento para trabajos en espacios confinados?"
         android:textAlignment="center"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +61,7 @@
         android:layout_height="64dp"
         android:layout_marginEnd="132dp"
         android:gravity="center"
-        android:text="El trabajador cuenta con los EPC necesarios y en buen estado para ejecutar la actividad?"
+        android:text="¿El trabajador conoce el procedimiento de trabajo en espacios confinados?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         android:layout_height="58dp"
         android:layout_marginEnd="132dp"
         android:gravity="center"
-        android:text="El trabajador se encuentra apto para desarrollar la labor"
+        android:text="¿Se permitió la ventilacion del espacio confinado antes de iniciar la actividad?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +87,8 @@
         android:layout_height="84dp"
         android:layout_marginEnd="132dp"
         android:gravity="center"
-        android:text="El trabajador revisó los accesos al área de trabajo y los requerimientos
-    de rescate en caso de presentarse una emergencia?"
+        android:text="¿Fue realizada la medición de gases antes de iniciar la labor en el espacio
+confinado?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +101,8 @@
         android:layout_height="66dp"
         android:layout_marginEnd="136dp"
         android:gravity="center"
-        android:text="El trabajador conoce el procedimiento de trabajo seguro en alturas?"
+        android:text="¿Se dispone de personal de vigilancia permanente en el exterior del espacio
+confinado?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -234,16 +235,16 @@
 
 
     <Button
-        android:id="@+id/clear"
-        android:layout_width="112dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="272dp"
+        android:id="@+id/clear2"
+        android:layout_width="116dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="268dp"
         android:layout_weight="1"
         android:text="clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.fibrateltec.atsapp.ui.Signature.SignaturePad
         android:id="@+id/signature_pad"
@@ -258,10 +259,10 @@
         app:layout_constraintVertical_bias="0.933" />
 
     <Button
-        android:id="@+id/btnxml"
-        android:layout_width="131dp"
+        android:id="@+id/btnxml7"
+        android:layout_width="110dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="140dp"
         android:layout_weight="1"
         android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -271,9 +272,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="96dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="32dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

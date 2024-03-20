@@ -23,13 +23,29 @@
             android:id="@+id/action_nav_home_to_nav_riesgo"
             app:destination="@id/nav_riesgo" />
 
+
     </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.fibrateltec.atsapp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery">
+    <action
+        android:id="@+id/action_nav_gallery_to_nav_gallery2"
+        app:destination="@id/nav_gallery2" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery2"
+        android:label="@string/menu_gallery2"
+        android:name="com.fibrateltec.atsapp.ui.gallery2.GalleryFragment2"
+        tools:layout="@layout/fragment_gallery2">
+        <action
+            android:id="@+id/action_nav_gallery2_to_nav_gallery3"
+            app:destination="@id/nav_gallery3" />
+
+    </fragment>
     <fragment
         android:id="@+id/nav_permiso"
         android:name="com.fibrateltec.navbar.ui.permiso.PermisoFragment"
@@ -46,4 +62,12 @@
         android:name="com.fibrateltec.navbar.ui.riesgo.RiesgoFragment"
         android:label="@string/menu_riesgo"
         tools:layout="@layout/fragment_riesgo" />
+    <fragment
+        android:id="@+id/nav_gallery3"
+        android:label="@string/menu_gallery3"
+        android:name="com.fibrateltec.atsapp.ui.gallery3.GalleryFragment3"
+        tools:layout="@layout/fragment_gallery3" />
+
+
+
 </navigation>

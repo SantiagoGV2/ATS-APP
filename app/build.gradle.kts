@@ -53,7 +53,7 @@ dependencies {
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("com.github.gcacace:signature-pad:1.3.0")
     implementation("com.itextpdf:itextg:5.5.10")
-    implementation("androidx.compose.ui:ui-text-android:1.6.3")
+    implementation ("com.itextpdf:itext7-core:7.1.15")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

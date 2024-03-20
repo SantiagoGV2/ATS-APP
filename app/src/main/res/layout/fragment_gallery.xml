@@ -10,6 +10,7 @@
     tools:layout_editor_absoluteY="-48dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
@@ -995,12 +996,25 @@ a la actividad que van a desarrollar?"
             android:id="@+id/nextBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="172dp"
+            android:layout_marginStart="60dp"
             android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView23"
-            app:layout_constraintVertical_bias="0.609">
+            app:layout_constraintVertical_bias="0.625">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnxml3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:text="Crear PDF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView23"
+            app:layout_constraintVertical_bias="0.6">
 
         </Button>
 
