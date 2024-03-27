@@ -45,9 +45,44 @@ para realizar la actividad?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/supervisor"
-            app:layout_constraintVertical_bias="0.042"
+            app:layout_constraintVertical_bias="0.052"
 
             />
+
+        <TextView
+            android:id="@+id/text_gallery2"
+            android:layout_width="260dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="¿El tiempo de sueño de cada integrante de la cuadrilla
+ha sido el suficiente para iniciar la labor?"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gallery13"
+            app:layout_constraintVertical_bias="0.014"
+
+            />
+
+        <TextView
+            android:id="@+id/text_gallery3"
+            android:layout_width="260dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="140dp"
+            android:text="¿Hubo lluvias recientes en el área de trabajo?"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_gallery2"
+            app:layout_constraintVertical_bias="0.029" />
 
         <EditText
             android:id="@+id/NombreyApellido"
@@ -62,14 +97,15 @@ para realizar la actividad?"
             app:layout_constraintHorizontal_bias="0.584"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <EditText
+        <TextView
             android:id="@+id/fecha"
-            android:layout_width="343dp"
-            android:layout_height="57dp"
+            android:layout_width="339dp"
+            android:layout_height="36dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:hint="Fecha"
+            android:text="Fecha"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.555"
@@ -99,7 +135,7 @@ para realizar la actividad?"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:hint="Ciudad/Localidad"
+            android:hint="Bogotá D.C/Cundinamarca"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.583"
@@ -114,30 +150,13 @@ para realizar la actividad?"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:hint="Cargo"
+            android:hint="Técnico"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.611"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/NombreyApellido"
             app:layout_constraintVertical_bias="0.001" />
-
-        <TextView
-            android:id="@+id/text_gallery2"
-            android:layout_width="260dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="¿El tiempo de sueño de cada integrante de la cuadrilla
-ha sido el suficiente para iniciar la labor?"
-            android:textAlignment="center"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_gallery13"
-            app:layout_constraintVertical_bias="0.014"
-
-            />
 
         <CheckBox
             android:id="@+id/si"
@@ -365,24 +384,6 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintTop_toBottomOf="@+id/si6" />
 
         <TextView
-            android:id="@+id/text_gallery3"
-            android:layout_width="260dp"
-            android:layout_height="72dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="140dp"
-            android:text="¿Hubo lluvias recientes en el área de trabajo??"
-            android:textAlignment="center"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_gallery2"
-            app:layout_constraintVertical_bias="0.028" />
-
-        <TextView
             android:id="@+id/text_gallery4"
             android:layout_width="261dp"
             android:layout_height="112dp"
@@ -479,7 +480,7 @@ a la actividad que van a desarrollar?"
             android:layout_width="214dp"
             android:layout_height="52dp"
             android:gravity="center"
-            android:text="Overol y demas elementos"
+            android:text="Overol y demás elementos"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -506,14 +507,14 @@ a la actividad que van a desarrollar?"
             android:layout_width="321dp"
             android:layout_height="64dp"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="404dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Condiciones fisicas generales de los integrantes de la cuadrilla"
+            android:text="Condiciones físicas generales de los integrantes de la cuadrilla"
             android:textAlignment="center"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/supervisor" />
 
         <TextView
             android:id="@+id/textView3"
@@ -559,7 +560,7 @@ a la actividad que van a desarrollar?"
             android:layout_width="219dp"
             android:layout_height="45dp"
             android:layout_marginStart="8dp"
-            android:text="Botas dieléctricas o de caucho"
+            android:text="Guantes de seguridad"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -1010,7 +1011,7 @@ a la actividad que van a desarrollar?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="184dp"
-            android:text="Crear PDF"
+            android:text="Guardar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView23"

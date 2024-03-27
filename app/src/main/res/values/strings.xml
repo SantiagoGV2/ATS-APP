@@ -2,18 +2,34 @@
     <string name="app_name">ATS app</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">FibraTelTec</string>
+    <string name="nav_header_subtitle">fibrateltec@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
+
     <string name="menu_gallery">Trabajo En Alturas</string>
-    <string name="menu_permiso">Permiso de Trabajo en Alturas</string>
     <string name="menu_gallery2">Identificacion de peligros potenciales</string>
     <string name="menu_gallery3">Caracterizacion de tareas criticas</string>
+    <string name="menu_pdf">Formulario Alturas</string>
+
+    <string name="menu_permiso">Permiso de Trabajo en Alturas</string>
+    <string name="menu_permiso2">Permiso de Trabajo en Alturas2</string>
+    <string name="menu_permiso3">Permiso de Trabajo en Alturas3</string>
+    <string name="menu_pdf4">Formulario Permiso Alturas</string>
+
     <string name="menu_slideshow">Confinados</string>
-    <string name="menu_riesgo">Riego Electrico</string>
+    <string name="menu_confinados2">Confinados2</string>
+    <string name="menu_confinados3">Confinados3</string>
+    <string name="menu_pdf3">Formulario Confinados</string>
+
+    <string name="menu_riesgo">Riesgo Electrico</string>
+    <string name="menu_riesgo2">Riesgo Electrico2</string>
+    <string name="menu_riesgo3">Riesgo Electrico3</string>
+    <string name="menu_riesgo4">Riesgo Electrico4</string>
+    <string name="menu_pdf2">Formulario Electrico</string>
+
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text"></string>
     <array name="fisico">
@@ -192,4 +208,41 @@
         <item>Regular</item>
         <item>Cambio</item>
     </string-array>
+    <string-array name="spinners2">
+        <item>Si</item>
+        <item>No</item>
+        <item>N/A</item>
+    </string-array>
+
+    <array name="spinnerHerramienta">
+        <item>Power metter</item>
+        <item>Streper</item>
+        <item>Chaqueta</item>
+        <item>Cortadora</item>
+        <item>Corta frios</item>
+        <item>Destornillador</item>
+        <item>Pinzas de punta</item>
+        <item>Medidor de señal (HFC)</item>
+        <item>Ponchadora RG6</item>
+        <item>Pelacable</item>
+        <item>Torque 11</item>
+
+
+    </array>
+
+    <array name="procedimiento">
+        <item>Inspección del área</item>
+        <item>Utlización de EPP y EPPC</item>
+        <item>Señalización del area</item>
+        <item>Verificación de la señalización</item>
+        <item>Verificación de la escalera</item>
+
+    </array>
+    <array name="tareas">
+        <item>Espacios Confinados</item>
+        <item>Trabajo en Caliente</item>
+        <item>Energías Peligrosas</item>
+
+
+    </array>
 </resources>

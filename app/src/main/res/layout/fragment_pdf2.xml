@@ -22,7 +22,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="228dp"
         android:text="Formulario de Alturas"
         android:textAlignment="center"
         android:textSize="20dp"
@@ -35,8 +35,8 @@
         android:id="@+id/btnDescarga2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="352dp"
         android:text="Descargar PDF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -47,15 +47,25 @@
         android:id="@+id/linkTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:autoLink="web"
         android:linksClickable="true"
         android:text="Suba su formulario en este link "
         android:textColorLink="@color/colorLink"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDescarga2" />
+
+    <Button
+        android:id="@+id/btnvolver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="184dp"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkTextView2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

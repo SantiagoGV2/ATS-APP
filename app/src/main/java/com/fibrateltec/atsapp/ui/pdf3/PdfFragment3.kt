@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
 import com.fibrateltec.atsapp.databinding.FragmentPdf3Binding
 import com.fibrateltec.atsapp.ui.pdf2.PdfViewModel2
@@ -73,6 +74,11 @@ class PdfFragment3 : Fragment() {
                 startActivity(intent)
 
             }
+            val btnvolver2: Button = findViewById(R.id.volver3)
+            btnvolver2.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
 
         }
 
@@ -122,7 +128,7 @@ class PdfFragment3 : Fragment() {
         private fun exportToPDF() {
             val path = File(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "FormularioConfinados"
+                "FormularioConfinados.pdf"
             ).absolutePath
             val file = File(path)
 

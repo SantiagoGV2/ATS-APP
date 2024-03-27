@@ -132,11 +132,11 @@ class GalleryFragment3 : Fragment() {
 
                 document.close() // Cerrar el documento aquí después de agregar todo el contenido
                 findViewById<Button>(R.id.button2).visibility = btnNextVisibility
-                Toast.makeText(this, "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Guardar exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Toast.makeText(this, "Error al crear el PDF: ${e.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
             }
         }
 

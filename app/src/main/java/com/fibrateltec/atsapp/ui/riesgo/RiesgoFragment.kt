@@ -31,6 +31,9 @@ import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 
 class RiesgoFragment : Fragment() {
@@ -587,7 +590,20 @@ class RiesgoFragment : Fragment() {
             btnxml8.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
             exportToPDF()
         }
+        val etBirthDate: TextView= root.findViewById(R.id.fecha)
+
+        val fechaActual = obtenerFechaActual()
+
+        etBirthDate.text = "Fecha Actual:$fechaActual"
+
         return root
+    }
+
+
+    private fun obtenerFechaActual(): String {
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val fecha = Date()
+        return dateFormat.format(fecha)
     }
     private fun checkPermission(): Boolean {
         val permission1 = ContextCompat.checkSelfPermission(
@@ -646,11 +662,11 @@ class RiesgoFragment : Fragment() {
             val constraint: ConstraintLayout = binding.constraint8
             addViewToPDF(document, constraint)
 
-            Toast.makeText(requireContext(), "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
 
         } catch (e: Exception) {
             e.printStackTrace()
-            Toast.makeText(requireContext(),"Error al crear el PDF: ${e.message}", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(),"Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
         }
         document.close()
         binding.nextBtn8.visibility = btnNextVisibility

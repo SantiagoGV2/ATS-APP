@@ -5,13 +5,11 @@
     android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="-48dp">
+    android:fillViewport="true">
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="10dp"
     tools:context=".ui.riesgo4.RiesgoFragment4$EighthActivity"
@@ -42,14 +40,14 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="4dp"
         android:gravity="center"
-        android:text="Verificacion de distancias minimas de seguridad (Redes electricas)"
+        android:text="Verificación de distancias minimas de seguridad (Redes eléctricas)"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <View
         android:id="@+id/textView29"
         android:layout_width="333dp"
         android:layout_height="77dp"
@@ -60,10 +58,10 @@
         android:background="@drawable/border_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <TextView
         android:id="@+id/textView39"
@@ -202,7 +200,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView29"
         app:layout_constraintVertical_bias="0.948" />
 
-    <TextView
+    <View
         android:id="@+id/textView40"
         android:layout_width="324dp"
         android:layout_height="98dp"
@@ -344,7 +342,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
-    <TextView
+    <View
         android:id="@+id/textView53"
         android:layout_width="318dp"
         android:layout_height="77dp"
@@ -462,7 +460,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
-    <TextView
+    <View
         android:id="@+id/textView63"
         android:layout_width="308dp"
         android:layout_height="115dp"
@@ -617,27 +615,51 @@
         app:layout_constraintTop_toTopOf="@+id/textView63"
         app:layout_constraintVertical_bias="0.979" />
 
+    <com.fibrateltec.atsapp.ui.Signature.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="354dp"
+        android:layout_height="158dp"
+        android:background="@drawable/signatture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.085" />
+
     <Button
         android:id="@+id/btnPDF"
         android:layout_width="109dp"
         android:layout_height="37dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="280dp"
+        android:layout_weight="1"
+        android:text="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnNext2"
         android:layout_width="105dp"
         android:layout_height="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

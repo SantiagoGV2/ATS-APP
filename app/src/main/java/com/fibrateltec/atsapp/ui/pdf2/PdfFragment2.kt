@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
 import com.fibrateltec.atsapp.databinding.FragmentPdf2Binding
 import com.itextpdf.kernel.pdf.PdfDocument
@@ -61,6 +62,11 @@ class PdfFragment2 : Fragment() {
             val btnDescarga: Button = findViewById(R.id.btnDescarga2)
             btnDescarga.setOnClickListener {
                 exportToPDF()
+            }
+            val btnvolver2: Button = findViewById(R.id.btnvolver2)
+            btnvolver2.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             }
 
             val linkTextView: TextView = findViewById(R.id.linkTextView2)
@@ -121,7 +127,7 @@ class PdfFragment2 : Fragment() {
         private fun exportToPDF() {
             val path = File(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "FormularioAlturas"
+                "FormularioAlturas.pdf"
             ).absolutePath
             val file = File(path)
 

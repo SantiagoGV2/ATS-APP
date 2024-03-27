@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="-48dp">
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint10"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:visibility="visible"
@@ -39,7 +38,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginBottom="1544dp"
             android:gravity="center"
-            android:text="Caracterizacion de tareas criticas"
+            android:text="Caracterización de tareas criticas"
             android:textAlignment="center"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -142,8 +141,8 @@ horizontal?"
 
         <TextView
             android:id="@+id/text_gallery7"
-            android:layout_width="248dp"
-            android:layout_height="72dp"
+            android:layout_width="246dp"
+            android:layout_height="86dp"
             android:layout_marginEnd="132dp"
             android:gravity="center"
             android:text="¿Los cables principales y las derivaciones de las instalaciones electricas de baja
@@ -185,7 +184,7 @@ tensión están entubados, empotrados o a la vista?"
             android:layout_height="72dp"
             android:layout_marginEnd="132dp"
             android:gravity="center"
-            android:text="Para el caso de instalaciones expuestas o a la vista, ¿se cuenta con canaletas,accesorios y/o fijacion apropiados?"
+            android:text="¿Para el caso de instalaciones expuestas o a la vista, ¿se cuenta con canaletas,accesorios y/o fijacion apropiados?"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -222,8 +221,7 @@ tensión están entubados, empotrados o a la vista?"
             android:layout_height="72dp"
             android:layout_marginEnd="136dp"
             android:gravity="center"
-            android:text="Los cables tienen contacto con agua en caso de que sea asi, los cables y las
-conexiones cuentan con aislamiento a prueba de agua?"
+            android:text="¿Los cables tienen contacto con agua en caso de que sea asi, los cables y las conexiones cuentan con aislamiento a prueba de agua?"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -430,48 +428,25 @@ protegidas o enterradas?"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.326" />
 
-        <com.fibrateltec.atsapp.ui.Signature.SignaturePad
-            android:id="@+id/signature_pad"
-            android:layout_width="354dp"
-            android:layout_height="158dp"
-            android:background="@drawable/border_black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.459"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.799" />
-
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="147dp"
-            android:layout_height="41dp"
-            android:layout_marginEnd="224dp"
-            android:layout_weight="1"
-            android:text="clear"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.842" />
 
         <Button
             android:id="@+id/btnxml6"
             android:layout_width="162dp"
             android:layout_height="39dp"
-            android:layout_marginEnd="44dp"
+            android:layout_marginEnd="48dp"
             android:layout_weight="1"
             android:text="Guardar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.842" />
+            app:layout_constraintVertical_bias="0.73" />
 
         <Button
             android:id="@+id/nextBtn6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginBottom="112dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="416dp"
             android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent">

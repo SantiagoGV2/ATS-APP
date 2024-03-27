@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -21,17 +22,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.R
 import com.fibrateltec.atsapp.databinding.FragmentRiesgo3Binding
-
 import com.fibrateltec.atsapp.ui.Signature.SignaturePad
 import com.fibrateltec.atsapp.ui.riesgo4.RiesgoFragment4
-
 import com.itextpdf.text.Document
 import com.itextpdf.text.Image
 import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
-
 class RiesgoFragment3 : Fragment() {
     private var _binding: FragmentRiesgo3Binding? = null
     private val binding get() = _binding!!
@@ -62,18 +60,11 @@ class RiesgoFragment3 : Fragment() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.fragment_riesgo3)
 
+
             if (checkPermission()) {
                 Toast.makeText(this, "Permiso Aceptado", Toast.LENGTH_LONG).show()
             } else {
                 requestPermissions()
-            }
-
-            val clearButton = findViewById<Button>(R.id.clear)
-            clearButton.setOnClickListener {
-                val signaturePad = findViewById<SignaturePad>(R.id.signature_pad)
-                isCreatePDFButtonVisible = !isCreatePDFButtonVisible
-                clearButton.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-                signaturePad.clearSignature()
             }
 
             val btnxml: Button = findViewById(R.id.btnxml6)
@@ -157,11 +148,12 @@ class RiesgoFragment3 : Fragment() {
                 document.close() // Cerrar el documento aquí después de agregar todo el contenido
                 val nextBtn = findViewById<Button>(R.id.nextBtn6)
                 nextBtn.visibility = btnNextVisibility
-                Toast.makeText(this, "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
+
+                Toast.makeText(this, "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Toast.makeText(this, "Error al crear el PDF: ${e.message}", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG)
                     .show()
             }
 
@@ -175,9 +167,6 @@ class RiesgoFragment3 : Fragment() {
 
             findViewById<Button>(R.id.nextBtn6).visibility = View.GONE
 
-            val clear = view.findViewById<Button>(R.id.clear)
-
-            clear.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
             // Calcula el margen del documento
             val margin = -90f
 

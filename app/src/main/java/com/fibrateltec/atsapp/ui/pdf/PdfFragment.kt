@@ -26,7 +26,12 @@ import com.itextpdf.kernel.pdf.PdfWriter
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
+import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
+import com.fibrateltec.atsapp.ui.gallery.GalleryFragment
+import com.fibrateltec.atsapp.ui.home.HomeFragment
+import com.fibrateltec.atsapp.ui.permiso3.PermisoFragment3
 
 
 class PdfFragment : Fragment() {
@@ -66,6 +71,12 @@ class PdfFragment : Fragment() {
             val btnDescarga: Button = findViewById(R.id.btnDescarga)
             btnDescarga.setOnClickListener {
                 exportToPDF()
+            }
+
+            val btnvolver: Button = findViewById(R.id.btnvolver)
+            btnvolver.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             }
 
             val linkTextView: TextView = findViewById(R.id.linkTextView1)
@@ -125,7 +136,7 @@ class PdfFragment : Fragment() {
 
         private fun exportToPDF() {
             val path = File(
-                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "FormularioRiesgoElectrico").absolutePath
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "FormularioRiesgoElectrico.pdf").absolutePath
             val file = File(path)
 
             try {

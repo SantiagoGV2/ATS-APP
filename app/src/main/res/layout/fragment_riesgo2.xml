@@ -50,7 +50,7 @@
         android:id="@+id/btneléctrico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="144dp"
         android:layout_marginBottom="420dp"
         android:text="Eléctrico"
         app:layout_constraintBottom_toBottomOf="parent"

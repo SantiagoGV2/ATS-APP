@@ -198,11 +198,11 @@ class RiesgoFragment2 : Fragment(){
                 val constraint: ConstraintLayout = findViewById(R.id.constraint9)
                 addViewToPDF(document, constraint)
 
-                Toast.makeText(this, "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Toast.makeText(this, "Error al crear el PDF: ${e.message}", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG)
                     .show()
             }
             document.close()

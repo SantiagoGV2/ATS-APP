@@ -126,13 +126,13 @@ class ConfinadosFragment3 : Fragment() {
                 val constraint: ConstraintLayout = findViewById(R.id.constraint6)
                 addViewToPDF(document, constraint)
 
-                document.close() // Cerrar el documento aquí después de agregar todo el contenido
+                document.close() // Cerrar el documento aquí después de agregar
                 findViewById<Button>(R.id.button3).visibility = btnNextVisibility
-                Toast.makeText(this, "PDF creado exitosamente en $path", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Toast.makeText(this, "Error al crear el PDF: ${e.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
             }
         }
 

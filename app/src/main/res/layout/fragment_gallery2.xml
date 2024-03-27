@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginBottom="556dp"
-        android:text="Fisico"
+        android:text="Físico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="260dp"
         android:layout_marginBottom="4dp"
-        android:text="Crear PDF"
+        android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 

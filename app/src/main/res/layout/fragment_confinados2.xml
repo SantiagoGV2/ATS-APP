@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
         android:layout_marginBottom="544dp"
-        android:text="Biologico"
+        android:text="Biológico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
         android:layout_marginBottom="180dp"
-        android:text="Electrico"
+        android:text="Eléctrico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="260dp"
         android:layout_marginBottom="4dp"
-        android:text="Crear PDF"
+        android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
