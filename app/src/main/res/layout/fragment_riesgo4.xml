@@ -58,20 +58,19 @@
         android:background="@drawable/border_black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.038" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="388dp"
         android:layout_height="52dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Distancia horizontal &quot;b&quot; a muros, balcones, salientes, ventanas y diferentes áreas independientemente de la  facilidad de accesibilidad de personas"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -83,9 +82,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="Distancia vertical “a” sobre techos y proyecciones, aplicable solamente a zonas de muy difícil acceso y siempre que el propietario o tenedor de la instalación eléctrica tenga absoluto control tanto de la instalación  como de la edificación"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -204,7 +205,7 @@
         android:id="@+id/textView40"
         android:layout_width="324dp"
         android:layout_height="98dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/border_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -625,7 +626,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView63"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.326" />
 
     <Button
         android:id="@+id/btnPDF"

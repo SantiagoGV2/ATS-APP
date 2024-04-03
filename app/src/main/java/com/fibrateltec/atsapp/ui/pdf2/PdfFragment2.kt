@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.view.LayoutInflater
@@ -13,6 +14,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -50,14 +52,11 @@ class PdfFragment2 : Fragment() {
     }
 
     class EleventhActivity : AppCompatActivity() {
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.fragment_pdf2)
-            if (checkPermission()) {
-                Toast.makeText(this, "Permiso Aceptado", Toast.LENGTH_LONG).show()
-            } else {
-                requestPermissions()
-            }
+
 
             val btnDescarga: Button = findViewById(R.id.btnDescarga2)
             btnDescarga.setOnClickListener {
@@ -81,48 +80,7 @@ class PdfFragment2 : Fragment() {
 
         }
 
-        private fun checkPermission(): Boolean {
-            val permission1 = ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            )
-            val permission2 = ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.READ_EXTERNAL_STORAGE
-            )
-            return permission1 == PackageManager.PERMISSION_GRANTED && permission2 == PackageManager.PERMISSION_GRANTED
-        }
 
-        private fun requestPermissions() {
-            requestPermissions(
-                arrayOf(
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.READ_EXTERNAL_STORAGE
-                ),
-                200
-            )
-        }
-
-        override fun onRequestPermissionsResult(
-            requestCode: Int,
-            permissions: Array<String>,
-            grantResults: IntArray
-        ) {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-            if (requestCode == 200) {
-                if (grantResults.size > 0) {
-                    val writeStorage = grantResults[0] == PackageManager.PERMISSION_GRANTED
-                    val readStorage = grantResults[1] == PackageManager.PERMISSION_GRANTED
-                    if (writeStorage && readStorage) {
-                        Toast.makeText(this, "Permisos concedidos", Toast.LENGTH_LONG)
-                            .show()
-                    } else {
-                        Toast.makeText(this, "Permisos Denegados", Toast.LENGTH_LONG).show()
-                        // En lugar de finalizar la actividad, puedes mostrar un mensaje o realizar otra acción adecuada.
-                    }
-                }
-            }
-        }
 
         private fun exportToPDF() {
             val path = File(

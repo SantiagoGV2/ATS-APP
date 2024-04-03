@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.view.LayoutInflater
@@ -61,6 +62,7 @@ class RiesgoFragment4 : Fragment() {
 
         private var btnNextVisibility = View.VISIBLE
         private var isCreatePDFButtonVisible = true
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.fragment_riesgo4)
@@ -69,11 +71,7 @@ class RiesgoFragment4 : Fragment() {
             val signaturePad = findViewById<SignaturePad>(R.id.signature_pad)
 
             signaturePad.setScrollView(scrollView)
-            if (checkPermission()) {
-                Toast.makeText(this, "Permiso Aceptado", Toast.LENGTH_LONG).show()
-            } else {
-                requestPermissions()
-            }
+
 
             val clearButton = findViewById<Button>(R.id.clear)
             btnNextVisibility = clearButton.visibility
@@ -99,50 +97,7 @@ class RiesgoFragment4 : Fragment() {
 
         }
 
-        private fun checkPermission(): Boolean {
-            val permission1 = ContextCompat.checkSelfPermission(
-                applicationContext,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            )
-            val permission2 = ContextCompat.checkSelfPermission(
-                applicationContext,
-                Manifest.permission.READ_EXTERNAL_STORAGE
-            )
-            return permission1 == PackageManager.PERMISSION_GRANTED && permission2 == PackageManager.PERMISSION_GRANTED
-        }
 
-        private fun requestPermissions() {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(
-                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.READ_EXTERNAL_STORAGE
-                ),
-                200
-            )
-        }
-
-        override fun onRequestPermissionsResult(
-            requestCode: Int,
-            permissions: Array<String>,
-            grantResults: IntArray
-        ) {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-            if (requestCode == 200) {
-                if (grantResults.size > 0) {
-                    val writeStorage = grantResults[0] == PackageManager.PERMISSION_GRANTED
-                    val readStorage = grantResults[1] == PackageManager.PERMISSION_GRANTED
-                    if (writeStorage && readStorage) {
-                        Toast.makeText(this, "Permisos concedidos", Toast.LENGTH_LONG).show()
-                    } else {
-                        Toast.makeText(this, "Permisos Denegados", Toast.LENGTH_LONG).show()
-                        finish()
-                    }
-                }
-            }
-
-
-        }
 
         private fun exportToPDF() {
             val document = Document()
@@ -182,17 +137,16 @@ class RiesgoFragment4 : Fragment() {
             findViewById<Button>(R.id.btnNext2).visibility = View.GONE
             findViewById<Button>(R.id.clear).visibility = View.GONE
             // Calcula el margen del documento
-            val margin = -90f
+            val margin = 0f
 
+            val increasedPageWidth = 550f
             // Calcula el tamaño de la página del documento
             val pageSize = document.pageSize
-            val pageWidth = pageSize.width - margin * 2.2f
-            val pageHeight = pageSize.height - margin * 1.86f//ACA
+            val pageWidth = increasedPageWidth - margin * 2.5f
+            val pageHeight = pageSize.height - margin * 2.5f
 
             // Convierte la vista a un bitmap
-            val bitmap = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
-            val canvas = Canvas(bitmap)
-            view.draw(canvas)
+            val bitmap = convertViewToBitmap(view)
 
             // Convierte el bitmap a bytes para agregarlo al documento PDF
             val stream = ByteArrayOutputStream()
@@ -200,51 +154,54 @@ class RiesgoFragment4 : Fragment() {
             val image = Image.getInstance(stream.toByteArray())
 
             // Ajusta el tamaño de la imagen al documento
-            val aspectRatio = image.width / image.height
-            val newWidth = pageWidth * 1.4f
+            val aspectRatio = image.width.toFloat() / image.height.toFloat()
+            val newWidth = pageWidth * 1f // Ajusta el ancho según tu preferencia
             val newHeight = newWidth / aspectRatio
 
             // Si la imagen es más grande que la página, divide la imagen en varias partes
             if (newHeight > pageHeight) {
-                val numHorizontalSections = Math.ceil((newHeight / pageHeight).toDouble()).toInt()
-                val sectionHeight = pageHeight
-                val sectionWidth = pageWidth * 0.65f
-
-                for (i in 0 until numHorizontalSections) {
-                    val startY = i * sectionHeight
-                    val endY = startY + sectionHeight
-
-                    // Crea una nueva imagen para la sección actual
-                    val sectionBitmap =
-                        Bitmap.createBitmap(
-                            view.width,
-                            sectionHeight.toInt(),
-                            Bitmap.Config.ARGB_8888
-                        )
-                    val sectionCanvas = Canvas(sectionBitmap)
-                    sectionCanvas.drawBitmap(bitmap, 0f, -startY, null)
-
-                    // Convierte el bitmap a bytes para agregarlo al documento PDF
-                    val sectionStream = ByteArrayOutputStream()
-                    sectionBitmap.compress(Bitmap.CompressFormat.PNG, 100, sectionStream)
-                    val sectionImage = Image.getInstance(sectionStream.toByteArray())
-
-                    // Ajusta el tamaño de la imagen al documento
-                    sectionImage.scaleToFit(sectionWidth, sectionHeight)
-
-                    // Agrega la imagen al documento
-                    document.newPage()
-                    document.add(sectionImage)
-                }
+                divideBitmapIntoSections(document, bitmap, pageHeight, aspectRatio, pageWidth)
             } else {
                 // Ajusta el tamaño de la imagen al documento
                 image.scaleToFit(newWidth, newHeight)
 
                 // Agrega la imagen al documento
                 document.add(image)
+            }
+        }
 
-                // Agrega los checkboxes seleccionados al documento
+        private fun convertViewToBitmap(view: View): Bitmap {
+            val bitmap = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
+            val canvas = Canvas(bitmap)
+            view.draw(canvas)
+            return bitmap
+        }
 
+        private fun divideBitmapIntoSections(document: Document, bitmap: Bitmap, pageHeight: Float, aspectRatio: Float, pageWidth: Float) {
+            val numVerticalSections = Math.ceil((bitmap.height.toDouble() / pageHeight)).toInt()
+            var startY = 0f
+
+            for (i in 0 until numVerticalSections) {
+                var sectionHeight = pageHeight
+                val remainingHeight = bitmap.height - startY
+
+                if (remainingHeight < sectionHeight) {
+                    sectionHeight = remainingHeight
+                }
+
+                val sectionBitmap = Bitmap.createBitmap(bitmap, 0, startY.toInt(), bitmap.width, sectionHeight.toInt())
+
+                val byteArrayOutputStream = ByteArrayOutputStream()
+                sectionBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
+                val byteArray = byteArrayOutputStream.toByteArray()
+
+                val sectionImage = Image.getInstance(byteArray)
+                sectionImage.scaleToFit(pageWidth, sectionHeight)
+
+                document.newPage()
+                document.add(sectionImage)
+
+                startY += sectionHeight
             }
         }
     }

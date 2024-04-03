@@ -17,6 +17,7 @@
         android:scrollbarAlwaysDrawVerticalTrack="false"
         android:visibility="visible"
         tools:context=".ui.gallery.GalleryFragment">
+
         <TextView
             android:id="@+id/text_gallery"
             android:layout_width="match_parent"
@@ -284,13 +285,13 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/text_gallery6"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.321" />
+            app:layout_constraintVertical_bias="0.317" />
 
         <CheckBox
             android:id="@+id/no6"
             android:layout_width="79dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
             android:text="No"
             android:textAlignment="center"
