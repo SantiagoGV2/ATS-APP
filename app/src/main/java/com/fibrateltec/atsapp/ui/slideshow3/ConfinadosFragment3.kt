@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -59,15 +60,20 @@ class ConfinadosFragment3 : Fragment() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.fragment_confinados3)
 
+            val scrollView = findViewById<ScrollView>(R.id.scroll)
+            val signaturePad = findViewById<SignaturePad>(R.id.signature_pad)
+            signaturePad.setScrollView(scrollView)
 
             val clearButton = findViewById<Button>(R.id.clear2)
+            btnNextVisibility = clearButton.visibility
             clearButton.setOnClickListener {
                 val signaturePad = findViewById<SignaturePad>(R.id.signature_pad)
                 signaturePad.clearSignature()
             }
-
             val btnxml: Button = findViewById(R.id.btnxml7)
             btnxml.setOnClickListener {
+                isCreatePDFButtonVisible = !isCreatePDFButtonVisible
+                btnxml.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
                 exportToPDF()
             }
             val nxtboton2: Button = findViewById(R.id.button3)
@@ -97,6 +103,7 @@ class ConfinadosFragment3 : Fragment() {
 
                 document.close() // Cerrar el documento aquí después de agregar
                 findViewById<Button>(R.id.button3).visibility = btnNextVisibility
+                findViewById<Button>(R.id.clear2).visibility = btnNextVisibility
                 Toast.makeText(this, "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {
@@ -112,6 +119,7 @@ class ConfinadosFragment3 : Fragment() {
             btnCreatePDF.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
 
             findViewById<Button>(R.id.button3).visibility = View.GONE
+            findViewById<Button>(R.id.clear2).visibility = View.GONE
 
             // Calcula el margen del documento
             val margin = 0f

@@ -111,7 +111,7 @@ class GalleryFragment3 : Fragment() {
 
                 document.close() // Cerrar el documento aquí después de agregar todo el contenido
                 findViewById<Button>(R.id.button3).visibility = btnNextVisibility
-                findViewById<Button>(R.id.clear).visibility = btnNextVisibility
+                findViewById<Button>(R.id.clear2).visibility = btnNextVisibility
                 Toast.makeText(this, "Guardar exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {

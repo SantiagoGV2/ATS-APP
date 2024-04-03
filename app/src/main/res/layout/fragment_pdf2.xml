@@ -51,7 +51,7 @@
         android:autoLink="web"
         android:linksClickable="true"
         android:text="Suba su formulario en este link "
-        android:textColorLink="@color/colorLink"
+        android:textColor="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

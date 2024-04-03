@@ -90,7 +90,7 @@ class PermisoFragment2 : Fragment() {
             val selectedItems = mutableListOf<String>()
             button.setOnClickListener {
                 val builder = AlertDialog.Builder(context)
-                builder.setTitle("Factor y agente de riesgo")
+                builder.setTitle("Otras Tareas")
 
                 val primerItems = resources.getStringArray(R.array.tareas)
 
@@ -127,7 +127,7 @@ class PermisoFragment2 : Fragment() {
             val selectedItems = mutableListOf<String>()
             button.setOnClickListener {
                 val builder = AlertDialog.Builder(context)
-                builder.setTitle("Factor y agente de riesgo")
+                builder.setTitle("Procedimiento a Desarrollar")//Falta :)
 
                 val primerItems = resources.getStringArray(R.array.procedimiento)
 

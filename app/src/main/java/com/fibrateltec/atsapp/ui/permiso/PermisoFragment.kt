@@ -167,7 +167,7 @@ class PermisoFragment : Fragment() {
         val selectedItems = mutableListOf<String>()
         button.setOnClickListener {
             val builder = AlertDialog.Builder(context)
-            builder.setTitle("Factor y agente de riesgo")
+            builder.setTitle("Herramientas a Utilizar")
 
             val primerItems = resources.getStringArray(R.array.spinnerHerramienta)
 
