@@ -1,11 +1,11 @@
 package com.fibrateltec.atsapp.ui.slideshow
 
-import android.Manifest
+
 import android.content.Intent
-import android.content.pm.PackageManager
+
 import android.graphics.Bitmap
 import android.graphics.Canvas
-import android.os.Build
+
 import android.os.Bundle
 import android.os.Environment
 import android.view.LayoutInflater
@@ -18,13 +18,12 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
+
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.R
 import com.fibrateltec.atsapp.databinding.FragmentSlideshowBinding
-import com.fibrateltec.atsapp.ui.gallery2.GalleryFragment2
+
 import com.fibrateltec.atsapp.ui.slideshow2.ConfinadosFragment2
 import com.itextpdf.text.Document
 import com.itextpdf.text.Image
@@ -42,7 +41,6 @@ class SlideshowFragment : Fragment() {
     private val binding get() = _binding!!
     private var isCreatePDFButtonVisible = true
     private var btnNextVisibility = View.VISIBLE
-    private val STORAGE_PERMISSION_REQUEST_CODE = 200
 
     override fun onCreateView(
         inflater: LayoutInflater,

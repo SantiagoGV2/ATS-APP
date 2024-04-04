@@ -61,7 +61,6 @@ class GalleryFragment3 : Fragment() {
     class ThirdActivity : AppCompatActivity() {
         private var isCreatePDFButtonVisible = true
         private var btnNextVisibility = View.VISIBLE
-        private val STORAGE_PERMISSION_REQUEST_CODE = 200
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.fragment_gallery3)
@@ -109,9 +108,9 @@ class GalleryFragment3 : Fragment() {
                 val constraint: ConstraintLayout = findViewById(R.id.constraint)
                 addViewToPDF(document, constraint)
 
-                document.close() // Cerrar el documento aquí después de agregar todo el contenido
+                document.close()
                 findViewById<Button>(R.id.button3).visibility = btnNextVisibility
-                findViewById<Button>(R.id.clear2).visibility = btnNextVisibility
+                findViewById<Button>(R.id.clear).visibility = btnNextVisibility
                 Toast.makeText(this, "Guardar exitosamente en $path", Toast.LENGTH_LONG).show()
 
             } catch (e: Exception) {

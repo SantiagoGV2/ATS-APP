@@ -40,6 +40,8 @@
         <activity android:name=".ui.permiso2.PermisoFragment2$FourteenthActivity" />
         <activity android:name=".ui.permiso3.PermisoFragment3$FifteenthActivity" />
         <activity android:name=".ui.pdf4.PdfFragment4$SixteenthActivity" />
+        <activity android:name=".ui.vehiculos2.VehiculosFragment2$VehicleActivity"/>
+        <activity android:name=".ui.pdf5.PdfFragment5$VehiclePdfActivity"/>
 
     </application>
 

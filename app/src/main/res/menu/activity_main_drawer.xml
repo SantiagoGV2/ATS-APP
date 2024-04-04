@@ -24,6 +24,10 @@
             android:id="@+id/nav_riesgo"
             android:icon="@drawable/electrico"
             android:title="@string/menu_riesgo" />
+        <item
+            android:id="@+id/nav_vehiculo"
+            android:icon="@drawable/auto"
+            android:title="@string/menu_vehiculo"/>
 
     </group>
 </menu>

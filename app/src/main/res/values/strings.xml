@@ -32,6 +32,9 @@
 
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text"></string>
+    <string name="menu_vehiculo">Vehiculo</string>
+    <string name="menu_vehiculo2">Vehiculo2</string>
+
     <array name="fisico">
         <item>Ruido de impacto</item>
         <item>Ruido de intermitente</item>
@@ -235,8 +238,6 @@
         <item>Utlización de EPP y EPPC</item>
         <item>Señalización del area</item>
         <item>Verificación de la señalización</item>
-        <item>Verificación de la escalera</item>
-
     </array>
     <array name="tareas">
         <item>Espacios Confinados</item>
@@ -330,6 +331,25 @@
         <item>1072715628</item>
         <item>1020752036</item>
 
+    </string-array>
+
+    <string-array name="preoperacional_vehiculos">
+        <item>Cumple</item>
+        <item>No cumple</item>
+        <item>No aplica</item>
+    </string-array>
+
+    <string-array name="nombre_conductor">
+        <item>HUMBERTO DE JESUS MENDEZ ESCOBAR</item>
+        <item>JOSE GUSTAVO SARMIENTO DIAZ</item>
+        <item>VICTOR ALEXANDER LOPEZ RODRIGUEZ</item>
+        <item>WILLIAN ALEJANDRO SANDOVAL PUERTO</item>
+        <item>OSCAR IVAN MORALES GUEVARA</item>
+    </string-array>
+
+    <string-array name="cargo">
+        <item>Tecnico</item>
+        <item>Supervisor</item>
     </string-array>
 
 

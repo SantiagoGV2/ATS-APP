@@ -1,8 +1,5 @@
-package com.fibrateltec.atsapp.ui.gallery
+package com.fibrateltec.atsapp.ui.vehiculos
 
-
-
-import java.text.SimpleDateFormat
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -21,30 +18,22 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.R
-import com.fibrateltec.atsapp.databinding.FragmentGalleryBinding
-import com.fibrateltec.atsapp.ui.gallery2.GalleryFragment2
+import com.fibrateltec.atsapp.databinding.FragmentVehiculoBinding
+import com.fibrateltec.atsapp.ui.vehiculos2.VehiculosFragment2
 import com.itextpdf.text.Document
 import com.itextpdf.text.Image
 import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
-import java.util.Locale
-import java.util.Date
 
+class VehiculoFragment : Fragment() {
 
-
-
-class GalleryFragment : Fragment() {
-
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentVehiculoBinding? = null
 
     private val binding get() = _binding!!
     private var isCreatePDFButtonVisible = true
     private var btnNextVisibility = View.VISIBLE
-
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,19 +41,19 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val galleryViewModel = ViewModelProvider(this).get(GalleryViewModel::class.java)
+        val galleryViewModel = ViewModelProvider(this).get(VehiculosViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentVehiculoBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
+        val textView: TextView = binding.textVehiculo
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
-        val spinner: Spinner = root.findViewById(R.id.mySpinner1)
+        val spinner: Spinner = root.findViewById(R.id.spinner34)
 
         // Define los elementos del Spinner
-        val items = resources.getStringArray(R.array.spinners)
+        val items = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items)
@@ -88,10 +77,10 @@ class GalleryFragment : Fragment() {
         }
         spinner.onItemSelectedListener = null
         // Encuentra el Spinner por su ID
-        val spinner1: Spinner = root.findViewById(R.id.spinner2)
+        val spinner1: Spinner = root.findViewById(R.id.spinner35)
 
         // Define los elementos del Spinner
-        val items1 = resources.getStringArray(R.array.spinners)
+        val items1 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter1 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items1)
@@ -114,10 +103,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner1.onItemSelectedListener = null
-        val spinner2: Spinner = root.findViewById(R.id.spinner3)
+        val spinner2: Spinner = root.findViewById(R.id.spinner36)
 
         // Define los elementos del Spinner
-        val items2 = resources.getStringArray(R.array.spinners)
+        val items2 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter2 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items2)
@@ -140,10 +129,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner2.onItemSelectedListener = null
-        val spinner3: Spinner = root.findViewById(R.id.spinner4)
+        val spinner3: Spinner = root.findViewById(R.id.spinner37)
 
         // Define los elementos del Spinner
-        val items3 = resources.getStringArray(R.array.spinners)
+        val items3 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter3 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items3)
@@ -166,10 +155,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner3.onItemSelectedListener = null
-        val spinner4: Spinner = root.findViewById(R.id.spinner5)
+        val spinner4: Spinner = root.findViewById(R.id.spinner38)
 
         // Define los elementos del Spinner
-        val items4 = resources.getStringArray(R.array.spinners)
+        val items4 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter4 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items4)
@@ -192,9 +181,9 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner4.onItemSelectedListener = null
-        val spinner5: Spinner = root.findViewById(R.id.spinner6)
+        val spinner5: Spinner = root.findViewById(R.id.spinner39)
         // Define los elementos del Spinner
-        val items5 = resources.getStringArray(R.array.spinners)
+        val items5 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter5 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items5)
@@ -217,10 +206,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner5.onItemSelectedListener = null
-        val spinner6: Spinner = root.findViewById(R.id.spinner7)
+        val spinner6: Spinner = root.findViewById(R.id.spinner40)
 
         // Define los elementos del Spinner
-        val items6 =resources.getStringArray(R.array.spinners)
+        val items6 =resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter6 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items6)
@@ -243,10 +232,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner6.onItemSelectedListener = null
-        val spinner7: Spinner = root.findViewById(R.id.spinner8)
+        val spinner7: Spinner = root.findViewById(R.id.spinner41)
 
         // Define los elementos del Spinner
-        val items7 = resources.getStringArray(R.array.spinners)
+        val items7 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter7 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items7)
@@ -269,11 +258,11 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner7.onItemSelectedListener = null
-        val spinner8: Spinner = root.findViewById(R.id.spinner9)
+        val spinner8: Spinner = root.findViewById(R.id.spinner42)
 
 
         // Define los elementos del Spinner
-        val items8 = resources.getStringArray(R.array.spinners)
+        val items8 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter8 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items8)
@@ -297,10 +286,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner8.onItemSelectedListener = null
-        val spinner9: Spinner = root.findViewById(R.id.spinner10)
+        val spinner9: Spinner = root.findViewById(R.id.spinner43)
 
         // Define los elementos del Spinner
-        val items9 = resources.getStringArray(R.array.spinners)
+        val items9 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter9 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items9)
@@ -323,10 +312,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner9.onItemSelectedListener = null
-        val spinner10: Spinner = root.findViewById(R.id.spinner11)
+        val spinner10: Spinner = root.findViewById(R.id.spinner44)
 
         // Define los elementos del Spinner
-        val items10 = resources.getStringArray(R.array.spinners)
+        val items10 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter10 =
@@ -350,10 +339,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner10.onItemSelectedListener = null
-        val spinner11: Spinner = root.findViewById(R.id.spinner12)
+        val spinner11: Spinner = root.findViewById(R.id.spinner45)
 
         // Define los elementos del Spinner
-        val items11 = resources.getStringArray(R.array.spinners)
+        val items11 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter11 =
@@ -377,10 +366,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner11.onItemSelectedListener = null
-        val spinner12: Spinner = root.findViewById(R.id.spinner13)
+        val spinner12: Spinner = root.findViewById(R.id.spinner46)
 
         // Define los elementos del Spinner
-        val items12 = resources.getStringArray(R.array.spinners)
+        val items12 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter12 =
@@ -404,10 +393,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner12.onItemSelectedListener = null
-        val spinner13: Spinner = root.findViewById(R.id.spinner14)
+        val spinner13: Spinner = root.findViewById(R.id.spinner20)
 
         // Define los elementos del Spinner
-        val items13 = resources.getStringArray(R.array.spinners)
+        val items13 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter13 =
@@ -431,10 +420,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner13.onItemSelectedListener = null
-        val spinner14: Spinner = root.findViewById(R.id.spinner15)
+        val spinner14: Spinner = root.findViewById(R.id.spinner33)
 
         // Define los elementos del Spinner
-        val items14 = resources.getStringArray(R.array.spinners)
+        val items14 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter14 =
@@ -458,10 +447,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner14.onItemSelectedListener = null
-        val spinner15: Spinner = root.findViewById(R.id.spinner16)
+        val spinner15: Spinner = root.findViewById(R.id.spinner47)
 
         // Define los elementos del Spinner
-        val items15 = resources.getStringArray(R.array.spinners)
+        val items15 = resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter15 =
@@ -485,10 +474,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner15.onItemSelectedListener = null
-        val spinner16: Spinner = root.findViewById(R.id.spinner17)
+        val spinner16: Spinner = root.findViewById(R.id.spinner48)
 
         // Define los elementos del Spinner
-        val items16 =  resources.getStringArray(R.array.spinners)
+        val items16 =  resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter16 =
@@ -512,10 +501,10 @@ class GalleryFragment : Fragment() {
             }
         }
         spinner16.onItemSelectedListener = null
-        val spinner17: Spinner = root.findViewById(R.id.spinner18)
+        val spinner17: Spinner = root.findViewById(R.id.spinner49)
 
         // Define los elementos del Spinner
-        val items17 =  resources.getStringArray(R.array.spinners)
+        val items17 =  resources.getStringArray(R.array.preoperacional_vehiculos)
 
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter17 =
@@ -540,11 +529,10 @@ class GalleryFragment : Fragment() {
         }
         spinner17.onItemSelectedListener = null
 
-        val spinner19: Spinner = root.findViewById(R.id.NombreyApellido)
+        val spinner19: Spinner = root.findViewById(R.id.nombreConductor)
 
         // Define los elementos del Spinner
-        //val items18 = listOf("Bueno", "Regular", "Para cambio")
-        val items19 = arrayOf("Tecnico", *resources.getStringArray(R.array.tecnicos))
+        val items19 = arrayOf("Conductor", *resources.getStringArray(R.array.nombre_conductor))
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter19 =
             ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items19)
@@ -571,11 +559,11 @@ class GalleryFragment : Fragment() {
 
         spinner19.onItemSelectedListener = null
 
-        val spinner20: Spinner = root.findViewById(R.id.supervisor)
+        val spinner20: Spinner = root.findViewById(R.id.cargoConductor)
 
         // Define los elementos del Spinner
         //val items18 = listOf("Bueno", "Regular", "Para cambio")
-        val items20 = arrayOf("Supervisor", *resources.getStringArray(R.array.supervisores))
+        val items20 = arrayOf("Cargo", *resources.getStringArray(R.array.cargo))
         // Crea un adaptador y establece los elementos en el Spinner
         val adapter20 =
             ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items20)
@@ -602,71 +590,26 @@ class GalleryFragment : Fragment() {
 
         spinner20.onItemSelectedListener = null
 
-        val spinner18: Spinner = root.findViewById(R.id.spinner19)
-
-        // Define los elementos del Spinner
-        //val items18 = listOf("Bueno", "Regular", "Para cambio")
-        val items18 = resources.getStringArray(R.array.spinners)
-        // Crea un adaptador y establece los elementos en el Spinner
-        val adapter18 =
-            ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, items18)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner18.adapter = adapter18
-
-        spinner18.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                val selectedItem18 = items18[position]
-                Toast.makeText(requireContext(), "$selectedItem18", Toast.LENGTH_SHORT).show()
-            }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                // No se hace nada en caso de que no se seleccione ningún elemento.
-            }
-        }
-
-        spinner18.onItemSelectedListener = null
-
-
-
-        val nxtboton: Button = root.findViewById(R.id.nextBtn)
+        val nxtboton: Button = root.findViewById(R.id.btnnxt)
         btnNextVisibility = nxtboton.visibility
         nxtboton.setOnClickListener {
-            val intent = Intent(requireContext(), GalleryFragment2.SecondActivity::class.java)
+            val intent = Intent(requireContext(), VehiculosFragment2.VehicleActivity::class.java)
             startActivity(intent)
-
         }
 
-        val btnxml3: Button = root.findViewById(R.id.btnxml3)
-        btnxml3.setOnClickListener {
+        val btnxml: Button = root.findViewById(R.id.button2)
+        btnxml.setOnClickListener {
             isCreatePDFButtonVisible = !isCreatePDFButtonVisible
-            btnxml3.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
+            btnxml.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
             exportToPDF()
         }
-        val etBirthDate: TextView= root.findViewById(R.id.fecha)
-
-        val fechaActual = obtenerFechaActual()
-
-        etBirthDate.text = "Fecha Actual:$fechaActual"
 
         return root
     }
 
-
-    private fun obtenerFechaActual(): String {
-        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        val fecha = Date()
-        return dateFormat.format(fecha)
-    }
-
-
     private fun exportToPDF() {
         val document = Document()
-        val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Alturas.pdf").absolutePath
+        val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Preoperacional_vehiculo.pdf").absolutePath
         val file = File(path)
         try {
             val fileOutputStream = FileOutputStream(file)
@@ -676,7 +619,7 @@ class GalleryFragment : Fragment() {
             document.open()
 
             // Agrega el primer contenido al documento PDF
-            val constraint: ConstraintLayout= binding.constraint3
+            val constraint: ConstraintLayout = binding.constraint
             addViewToPDF(document, constraint)
 
             Toast.makeText(requireContext(), "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
@@ -686,15 +629,14 @@ class GalleryFragment : Fragment() {
             Toast.makeText(requireContext(),"Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
         }
         document.close()
-        binding.nextBtn.visibility = btnNextVisibility
+        binding.btnnxt.visibility = btnNextVisibility
 
     }
 
-
     private fun addViewToPDF(document: Document, view: View) {
-        val btnCreatePDF = view.findViewById<Button>(R.id.btnxml3)
+        val btnCreatePDF = view.findViewById<Button>(R.id.button2)
         btnCreatePDF.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-        binding.nextBtn.visibility = View.GONE
+        binding.btnnxt.visibility = View.GONE
 
         // Calcula el margen del documento
         val margin = 0f
@@ -771,14 +713,6 @@ class GalleryFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
+
 }
-
-
-
-
-
-
-
-
-
-

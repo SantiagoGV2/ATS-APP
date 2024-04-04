@@ -22,7 +22,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_riesgo"
             app:destination="@id/nav_riesgo" />
-
+        <action
+            android:id="@+id/action_nav_home_to_nav_vehiculo"
+            app:destination="@+id/nav_vehiculo"/>
 
     </fragment>
 
@@ -167,6 +169,25 @@
         android:label="@string/menu_pdf2"
         android:name="com.fibrateltec.atsapp.ui.pdf.PdfFragment"
         tools:layout="@layout/fragment_pdf" />
+
+    <fragment
+        android:id="@+id/nav_vehiculo"
+        android:label="@string/menu_vehiculo"
+        android:name="com.fibrateltec.atsapp.ui.vehiculos.VehiculoFragment"
+        tools:layout="@layout/fragment_vehiculo">
+        <action
+            android:id="@+id/action_nav_vehiculo_to_nav_vehiculo2"
+            app:destination="@id/nav_vehiculo2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vehiculo2"
+        android:label="@string/menu_vehiculo2"
+        android:name="com.fibrateltec.atsapp.ui.vehiculos2.VehiculosFragment2"
+        tools:layout="@layout/fragment_vehiculo2"/>
+
+
+
 
 
 
