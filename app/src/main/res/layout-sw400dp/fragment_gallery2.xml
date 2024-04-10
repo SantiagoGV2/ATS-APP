@@ -34,8 +34,8 @@
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="406dp"
-        android:layout_height="43dp"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="796dp"
         android:text="IDENTIFICACIÓN DE PELIGROS POTENCIALES(Alturas)"
@@ -58,21 +58,21 @@
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="419dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="390dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btneléctrico" />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="422dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="390dp"
+        android:layout_height="140dp"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnalturas" />
 
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="Biomecánicos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23">
@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="4dp"
         android:text="Físico"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22">
@@ -114,21 +114,21 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="424dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnfisico" />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="421dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbiomecanicos" />
 
@@ -136,11 +136,10 @@
         android:id="@+id/nextBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="160dp"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26">
 
     </Button>
 
@@ -148,11 +147,11 @@
         android:id="@+id/btnxml2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
-        android:layout_marginBottom="52dp"
         android:text="Guardar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toEndOf="@+id/nextBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/textView26">
 
     </Button>
 
