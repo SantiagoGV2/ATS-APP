@@ -49,9 +49,9 @@
     <TextView
         android:id="@+id/text_gallery2"
         android:layout_width="257dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="680dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="720dp"
         android:text="¿El trabajador tiene entrenamiento para trabajos en espacios confinados?"
         android:textAlignment="center"
         android:textSize="15sp"
@@ -62,34 +62,34 @@
     <TextView
         android:id="@+id/text_gallery"
         android:layout_width="259dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="132dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="128dp"
         android:gravity="center"
         android:text="¿El trabajador conoce el procedimiento de trabajo en espacios confinados?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_gallery2"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.051" />
 
     <TextView
         android:id="@+id/text_gallery4"
         android:layout_width="266dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="124dp"
         android:gravity="center"
         android:text="¿Se permitió la ventilacion del espacio confinado antes de iniciar la actividad?"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_gallery3"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <TextView
         android:id="@+id/text_gallery5"
         android:layout_width="261dp"
-        android:layout_height="83dp"
-        android:layout_marginEnd="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
         android:gravity="center"
         android:text="¿Fue realizada la medición de gases antes de iniciar la labor en el espacio
 confinado?"
@@ -97,13 +97,13 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_gallery4"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintVertical_bias="0.056" />
 
     <TextView
         android:id="@+id/text_gallery3"
         android:layout_width="258dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="136dp"
+        android:layout_marginEnd="132dp"
         android:gravity="center"
         android:text="¿Se dispone de personal de vigilancia permanente en el exterior del espacio
 confinado?"
@@ -111,7 +111,7 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_gallery"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <CheckBox
         android:id="@+id/si2"
@@ -123,19 +123,7 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
-
-    <CheckBox
-        android:id="@+id/no5"
-        android:layout_width="79dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="44dp"
-        android:text="No"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <CheckBox
         android:id="@+id/si"
@@ -147,7 +135,7 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.181" />
 
     <CheckBox
         android:id="@+id/no2"
@@ -161,7 +149,7 @@ confinado?"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <CheckBox
         android:id="@+id/si3"
@@ -173,7 +161,7 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.279" />
 
     <CheckBox
         android:id="@+id/no3"
@@ -186,7 +174,7 @@ confinado?"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.327" />
 
     <CheckBox
         android:id="@+id/si4"
@@ -198,7 +186,31 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.389" />
+
+    <CheckBox
+        android:id="@+id/si5"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="Si"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <CheckBox
+        android:id="@+id/no5"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:text="No"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
     <CheckBox
         android:id="@+id/no4"
@@ -210,7 +222,7 @@ confinado?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintVertical_bias="0.439" />
 
     <CheckBox
         android:id="@+id/no"
@@ -223,62 +235,50 @@ confinado?"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.133" />
 
-    <CheckBox
-        android:id="@+id/si5"
-        android:layout_width="79dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="44dp"
-        android:text="Si"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
-
-
-    <Button
-        android:id="@+id/clear2"
-        android:layout_width="116dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="268dp"
-        android:layout_weight="1"
-        android:text="clear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
     <com.fibrateltec.atsapp.ui.Signature.SignaturePad
         android:id="@+id/signature_pad"
         android:layout_width="354dp"
         android:layout_height="158dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/signatture"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933" />
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery5" />
 
     <Button
         android:id="@+id/btnxml7"
         android:layout_width="110dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="148dp"
         android:layout_weight="1"
         android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="116dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="276dp"
+        android:layout_weight="1"
+        android:text="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="156dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

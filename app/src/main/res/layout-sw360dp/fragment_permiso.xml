@@ -217,7 +217,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="28dp"
 
             android:text="Herramientas a utilizar"
             app:layout_constraintStart_toStartOf="parent"
@@ -230,7 +230,7 @@
             android:layout_width="340dp"
             android:layout_height="84dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnHerramientas" />

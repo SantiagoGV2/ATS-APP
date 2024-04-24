@@ -266,7 +266,6 @@
         <item>WELTHER LEWIS MUSUSU NEMPEQUE</item>
         <item>OSCAR DAVID CAVIEDES GOMEZ</item>
         <item>OSCAR FERNANDO LUNA PEREZ</item>
-
         <item>DIEGO FERNANDO FARFAN VILLARRAGA</item>
         <item>WILMER GAVIRIA HOLGUIN</item>
         <item>JOSE JAVIER GUTIERREZ PADUA</item>
@@ -322,12 +321,10 @@
         <item>2639756</item>
         <item>5071395</item>
         <item>73199359</item>
-
     </string-array>
 
     <string-array name="cedula_supervisor">
         <item>1030683839</item>
-
         <item>1072715628</item>
         <item>1020752036</item>
 
@@ -345,6 +342,26 @@
         <item>VICTOR ALEXANDER LOPEZ RODRIGUEZ</item>
         <item>WILLIAN ALEJANDRO SANDOVAL PUERTO</item>
         <item>OSCAR IVAN MORALES GUEVARA</item>
+        <item>ARGEMIRO MANUEL ENAMORADO OROZCO</item>
+        <item>EDGAR ALBERTO MARTINEZ SALGADO</item>
+        <item>OSCAR FERNANDO LUNA PEREZ</item>
+        <item>JOSE GUSTAVO SARMIENTO DIAZ</item>
+        <item>NELSON ORLANDO PARRAGA TOVAR</item>
+        <item>JEISSON STIVEN ZAMORA  ZAMORA</item>
+        <item>YESID DARIO PETRO MARTINEZ</item>
+        <item>ALEXIO ROBERTO JULIO BELLIDO</item>
+        <item>ALEXANDER RODRIGUEZ</item>
+        <item>YOSSY ZAPATA REINA</item>
+        <item>DIEGO FERNANDO FARFAN VILLARRAGA</item>
+        <item>WILMER GAVIRIA HOLGUIN</item>
+        <item>JOSE JAVIER GUTIERREZ PADUA</item>
+        <item>YHON MARIO MONTENEGRO BENAVIDES</item>
+        <item>YEISON ALBERTO RAMIREZ GOMEZ</item>
+        <item>JOSE ALFREDO JIMENEZ SERPA</item>
+        <item>JUAN ANTONIO RODRIGUEZ RODRIGUEZ</item>
+        <item>VICTOR JESUS GOMEZ QUIJADA</item>
+        <item>SERGIO ANTONIO FAJARDO GARCIA</item>
+        <item>LUIS ALEJANDRO CUESTAS CARDENAS</item>
     </string-array>
 
     <string-array name="cargo">

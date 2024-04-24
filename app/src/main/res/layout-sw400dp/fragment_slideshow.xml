@@ -174,13 +174,13 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.445" />
+            app:layout_constraintVertical_bias="0.439" />
 
         <CheckBox
             android:id="@+id/no8"
             android:layout_width="79dp"
             android:layout_height="48dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="36dp"
             android:text="No"
             android:textAlignment="center"
@@ -231,7 +231,7 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.317" />
+            app:layout_constraintVertical_bias="0.32" />
 
         <CheckBox
             android:id="@+id/no5"
@@ -375,11 +375,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.272"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery4"
-            app:layout_constraintVertical_bias="0.019" />
+            app:layout_constraintVertical_bias="0.022" />
 
         <TextView
             android:id="@+id/text_gallery6"
@@ -393,11 +393,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintHorizontal_bias="0.0"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery5"
-            app:layout_constraintVertical_bias="0.019" />
+            app:layout_constraintVertical_bias="0.014" />
 
         <TextView
             android:id="@+id/text_gallery7"
@@ -415,7 +415,7 @@ a la actividad que van a desarrollar?"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery6"
-            app:layout_constraintVertical_bias="0.023" />
+            app:layout_constraintVertical_bias="0.006" />
 
         <TextView
             android:id="@+id/text_gallery8"
@@ -443,13 +443,11 @@ a la actividad que van a desarrollar?"
             android:text="Overol y demas elementos"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/mySpinner1"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.244"
             app:layout_constraintStart_toStartOf="parent"
 
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.553" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <Spinner
             android:id="@+id/mySpinner1"
@@ -457,10 +455,8 @@ a la actividad que van a desarrollar?"
             android:layout_height="46dp"
             android:layout_marginEnd="16dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.555" />
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <TextView
             android:id="@+id/text_gallery15"
@@ -481,15 +477,14 @@ a la actividad que van a desarrollar?"
             android:layout_width="327dp"
             android:layout_height="56dp"
             android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
             android:gravity="center_horizontal"
             android:text="INSPECCIÓN DE ELEMENTOS DE PROTECCIÓN INDIVIDUAL"
             android:textAlignment="center"
             android:textSize="17sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.524" />
+            app:layout_constraintTop_toBottomOf="@+id/text_gallery8" />
 
         <TextView
             android:id="@+id/textView4"
@@ -499,21 +494,17 @@ a la actividad que van a desarrollar?"
             android:text="Botas dieléctricas o de caucho"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.576" />
+            app:layout_constraintTop_toBottomOf="@+id/text_gallery9" />
 
         <Spinner
             android:id="@+id/spinner2"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="16dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.575" />
+            app:layout_constraintTop_toBottomOf="@+id/mySpinner1" />
 
         <TextView
             android:id="@+id/textView5"
@@ -523,21 +514,17 @@ a la actividad que van a desarrollar?"
             android:text="Guantes de seguridad"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView4"
-            app:layout_constraintVertical_bias="0.01" />
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
 
         <Spinner
             android:id="@+id/spinner3"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="16dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.594" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
         <TextView
             android:id="@+id/textView6"
@@ -547,10 +534,8 @@ a la actividad que van a desarrollar?"
             android:text="Casco de Seguridad Tipo II clase E con Barbuquejo"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView5"
-            app:layout_constraintVertical_bias="0.01" />
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
 
         <Spinner
             android:id="@+id/spinner4"
@@ -558,10 +543,8 @@ a la actividad que van a desarrollar?"
             android:layout_height="46dp"
             android:layout_marginEnd="20dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.614" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
         <TextView
             android:id="@+id/textView7"
@@ -571,10 +554,8 @@ a la actividad que van a desarrollar?"
             android:text="Monogafas de Seguridad"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView6"
-            app:layout_constraintVertical_bias="0.012" />
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
 
         <Spinner
             android:id="@+id/spinner5"
@@ -582,25 +563,22 @@ a la actividad que van a desarrollar?"
             android:layout_height="46dp"
             android:layout_marginEnd="20dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.635" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner4" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="327dp"
             android:layout_height="56dp"
             android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
             android:text="INSPECCIÓN DE EQUIPOS DE PROTECCIÓN CONTRA CAÍDAS"
             android:textAlignment="center"
             android:textSize="17sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView9"
@@ -619,100 +597,97 @@ a la actividad que van a desarrollar?"
             android:id="@+id/spinner6"
             android:layout_width="132dp"
             android:layout_height="46dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.677" />
-
-        <Spinner
-            android:id="@+id/spinner11"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.779" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <Spinner
             android:id="@+id/spinner7"
             android:layout_width="132dp"
             android:layout_height="46dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.698" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner6" />
 
         <Spinner
             android:id="@+id/spinner8"
             android:layout_width="132dp"
             android:layout_height="46dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.719" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner7" />
 
         <Spinner
             android:id="@+id/spinner10"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.76" />
-
-        <Spinner
-            android:id="@+id/spinner13"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.817" />
+            app:layout_constraintVertical_bias="0.696" />
 
         <Spinner
             android:id="@+id/spinner14"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.836" />
-
-        <Spinner
-            android:id="@+id/spinner9"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
+            app:layout_constraintVertical_bias="0.773" />
 
         <Spinner
             android:id="@+id/spinner12"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.798" />
+            app:layout_constraintVertical_bias="0.734" />
+
+        <Spinner
+            android:id="@+id/spinner11"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.716" />
+
+        <Spinner
+            android:id="@+id/spinner13"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.753" />
+
+        <Spinner
+            android:id="@+id/spinner9"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.674" />
 
         <TextView
             android:id="@+id/textView10"
@@ -849,69 +824,69 @@ a la actividad que van a desarrollar?"
             android:id="@+id/spinner15"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.891" />
-
-        <Spinner
-            android:id="@+id/spinner16"
-            android:layout_width="132dp"
-            android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
-            android:gravity="right|left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.909" />
+            app:layout_constraintVertical_bias="0.838" />
 
         <Spinner
             android:id="@+id/spinner17"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.93" />
+            app:layout_constraintVertical_bias="0.878" />
 
         <Spinner
             android:id="@+id/spinner18"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.95" />
+            app:layout_constraintVertical_bias="0.897" />
 
         <Spinner
             android:id="@+id/spinner19"
             android:layout_width="132dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="32dp"
             android:gravity="right|left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.967" />
+            app:layout_constraintVertical_bias="0.915" />
+
+        <Spinner
+            android:id="@+id/spinner16"
+            android:layout_width="132dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="right|left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.861" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="210dp"
             android:layout_height="44dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:text="Equipos de medición (identificación y estado de calibración)"
             android:textAlignment="center"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView19"
-            app:layout_constraintVertical_bias="0.050" />
+            app:layout_constraintVertical_bias="0.073" />
 
         <TextView
             android:id="@+id/textView21"
@@ -934,48 +909,45 @@ a la actividad que van a desarrollar?"
             android:text="Escalera Tijera (Para actividades al Interior)"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView21"
-            app:layout_constraintVertical_bias="0.123" />
+            app:layout_constraintTop_toBottomOf="@id/textView21" />
 
         <TextView
             android:id="@+id/textView23"
             android:layout_width="210dp"
             android:layout_height="44dp"
             android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
             android:text="Escalera de extensión en fibra de Vidrio"
             android:textAlignment="center"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView22"
-            app:layout_constraintVertical_bias="0.176" />
+            app:layout_constraintTop_toBottomOf="@id/textView22" />
 
-
-        <Button
-            android:id="@+id/nextBtn4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:text="Next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView23"
-            app:layout_constraintVertical_bias="0.625">
-
-        </Button>
 
         <Button
             android:id="@+id/btnxml4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="248dp"
+            android:layout_marginStart="252dp"
             android:text="Guardar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView23"
-            app:layout_constraintVertical_bias="0.634">
+            app:layout_constraintVertical_bias="0.334">
+
+        </Button>
+
+        <Button
+            android:id="@+id/nextBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView23"
+            app:layout_constraintVertical_bias="0.325">
 
         </Button>
 

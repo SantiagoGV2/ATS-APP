@@ -15,7 +15,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
-import com.fibrateltec.atsapp.databinding.FragmentPdf4Binding
 import com.fibrateltec.atsapp.databinding.FragmentPdf5Binding
 import com.fibrateltec.atsapp.ui.pdf4.PdfViewModel4
 import com.itextpdf.kernel.pdf.PdfDocument
@@ -23,6 +22,9 @@ import com.itextpdf.kernel.pdf.PdfReader
 import com.itextpdf.kernel.pdf.PdfWriter
 import java.io.File
 import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class PdfFragment5 : Fragment(){
 
@@ -73,9 +75,13 @@ class PdfFragment5 : Fragment(){
             }
         }
         private fun exportToPDF() {
+            val sdf = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault())
+            val currentDateAndTime: String = sdf.format(Date())
+            val fileName = "FormularioVehiculo_$currentDateAndTime.pdf"
+
             val path = File(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "FormularioVehiculo.pdf"
+                fileName
             ).absolutePath
             val file = File(path)
 
@@ -109,6 +115,7 @@ class PdfFragment5 : Fragment(){
                     .show()
             }
         }
+
     }
     override fun onDestroyView() {
         super.onDestroyView()

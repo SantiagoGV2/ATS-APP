@@ -99,7 +99,7 @@
         android:id="@+id/text_gallery3"
         android:layout_width="258dp"
         android:layout_height="66dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="156dp"
         android:gravity="center"
         android:text="¿El trabajador conoce el procedimiento de trabajo seguro en alturas?"
@@ -167,7 +167,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.389" />
 
     <CheckBox
         android:id="@+id/no3"
@@ -180,7 +180,7 @@
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.438" />
 
     <CheckBox
         android:id="@+id/si4"

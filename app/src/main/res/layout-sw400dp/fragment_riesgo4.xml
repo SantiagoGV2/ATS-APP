@@ -454,7 +454,6 @@
         android:id="@+id/textView62"
         android:layout_width="359dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Distancia vertical &quot;d&quot; a carreteras, calles, callejones, zonas peatonales, areas sujetas a trafico vehicular para vehiculos de mas de 2.45m de altura"
         app:layout_constraintEnd_toEndOf="parent"
@@ -465,7 +464,7 @@
         android:id="@+id/textView63"
         android:layout_width="308dp"
         android:layout_height="115dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -620,13 +619,12 @@
         android:id="@+id/signature_pad"
         android:layout_width="354dp"
         android:layout_height="158dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/signatture"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
     <Button
         android:id="@+id/btnPDF"
@@ -643,13 +641,12 @@
         android:id="@+id/clear"
         android:layout_width="115dp"
         android:layout_height="37dp"
-        android:layout_marginEnd="280dp"
+        android:layout_marginTop="32dp"
         android:layout_weight="1"
         android:text="clear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signature_pad"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toStartOf="@+id/btnNext2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
 
     <Button
         android:id="@+id/btnNext2"

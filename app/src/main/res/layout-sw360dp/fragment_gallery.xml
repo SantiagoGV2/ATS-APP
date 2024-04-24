@@ -151,13 +151,12 @@ ha sido el suficiente para iniciar la labor?"
             android:id="@+id/si"
             android:layout_width="79dp"
             android:layout_height="48dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="8dp"
             android:text="Si"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.132" />
+            app:layout_constraintTop_toBottomOf="@+id/text_gallery15" />
 
         <CheckBox
             android:id="@+id/no"
@@ -174,13 +173,12 @@ ha sido el suficiente para iniciar la labor?"
             android:id="@+id/si3"
             android:layout_width="79dp"
             android:layout_height="48dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:text="Si"
             android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.169" />
+            app:layout_constraintTop_toBottomOf="@+id/no" />
 
         <CheckBox
             android:id="@+id/no3"
@@ -203,7 +201,7 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.209" />
+            app:layout_constraintVertical_bias="0.212" />
 
         <CheckBox
             android:id="@+id/no4"
@@ -249,7 +247,7 @@ ha sido el suficiente para iniciar la labor?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.297" />
+            app:layout_constraintVertical_bias="0.292" />
 
         <CheckBox
             android:id="@+id/si7"
@@ -301,13 +299,13 @@ ha sido el suficiente para iniciar la labor?"
             android:id="@+id/si2"
             android:layout_width="79dp"
             android:layout_height="48dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="16dp"
             android:text="Si"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.416" />
+            app:layout_constraintVertical_bias="0.432" />
 
         <CheckBox
             android:id="@+id/no2"
@@ -435,11 +433,11 @@ a la actividad que van a desarrollar?"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintHorizontal_bias="0.0"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_gallery7"
-            app:layout_constraintVertical_bias="0.021" />
+            app:layout_constraintVertical_bias="0.058" />
 
         <TextView
             android:id="@+id/text_gallery9"
@@ -473,7 +471,7 @@ a la actividad que van a desarrollar?"
             android:layout_width="321dp"
             android:layout_height="64dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Condiciones físicas generales de los integrantes de la cuadrilla"
             android:textAlignment="center"

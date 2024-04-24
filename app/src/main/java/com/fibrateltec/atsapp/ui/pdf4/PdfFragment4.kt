@@ -1,10 +1,7 @@
 package com.fibrateltec.atsapp.ui.pdf4
 
-import android.Manifest
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.view.LayoutInflater
@@ -14,20 +11,19 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
-import com.fibrateltec.atsapp.databinding.FragmentPdf3Binding
 import com.fibrateltec.atsapp.databinding.FragmentPdf4Binding
-import com.fibrateltec.atsapp.ui.pdf3.PdfViewModel3
 import com.itextpdf.kernel.pdf.PdfDocument
 import com.itextpdf.kernel.pdf.PdfReader
 import com.itextpdf.kernel.pdf.PdfWriter
 import java.io.File
 import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class PdfFragment4 : Fragment() {
 
@@ -83,9 +79,12 @@ class PdfFragment4 : Fragment() {
 
 
         private fun exportToPDF() {
+            val timeStamp: String = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
+            val fileName = "FormularioPermiso_$timeStamp.pdf"
+
             val path = File(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "FormularioPermiso.pdf"
+                fileName
             ).absolutePath
             val file = File(path)
 

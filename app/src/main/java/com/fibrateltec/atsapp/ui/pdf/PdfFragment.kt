@@ -7,8 +7,6 @@ package com.fibrateltec.atsapp.ui.pdf
 import com.itextpdf.kernel.pdf.PdfReader
 import java.io.File
 import java.io.FileOutputStream
-import android.Manifest
-import android.content.pm.PackageManager
 import com.itextpdf.kernel.pdf.PdfDocument
 import android.os.Bundle
 import android.os.Environment
@@ -18,22 +16,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.fibrateltec.atsapp.databinding.FragmentPdfBinding
 import com.itextpdf.kernel.pdf.PdfWriter
 import android.content.Intent
 import android.net.Uri
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContentProviderCompat.requireContext
 import com.fibrateltec.atsapp.MainActivity
 import com.fibrateltec.atsapp.R
-import com.fibrateltec.atsapp.ui.gallery.GalleryFragment
-import com.fibrateltec.atsapp.ui.home.HomeFragment
-import com.fibrateltec.atsapp.ui.permiso3.PermisoFragment3
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+
+
 
 
 class PdfFragment : Fragment() {
@@ -93,8 +89,13 @@ class PdfFragment : Fragment() {
 
 
         private fun exportToPDF() {
+            val sdf = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault())
+            val currentDateAndTime: String = sdf.format(Date())
+
+            val fileName = "FormularioRiesgoElectrico_$currentDateAndTime.pdf"
             val path = File(
-                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "FormularioRiesgoElectrico.pdf").absolutePath
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), fileName
+            ).absolutePath
             val file = File(path)
 
             try {
@@ -105,7 +106,7 @@ class PdfFragment : Fragment() {
 
                 // Agrega el contenido de los tres PDFs al documento
                 val pdfFiles =
-                    listOf("Riesgo.pdf", "Peligros_potenciales2.pdf", "Tareas_criticas2.pdf","Verificacion_distancias.pdf")
+                    listOf("Riesgo.pdf", "Peligros_potenciales2.pdf", "Tareas_criticas2.pdf", "Verificacion_distancias.pdf")
                 pdfFiles.forEach { fileName ->
                     val pdfFile = File(
                         Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
@@ -127,6 +128,7 @@ class PdfFragment : Fragment() {
                     .show()
             }
         }
+
 
     }
     override fun onDestroyView() {
